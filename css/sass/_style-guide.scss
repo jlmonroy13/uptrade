@@ -3,13 +3,21 @@ $light-green: #95D700;
 a {
 	text-decoration: none;
 }
-// Main Button
-.green-btn {
+
+h2 {
 	color: white;
-	background-color: $light-green;
+	font-size: 1.5714em;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+// Main Button
+
+.btn {
+	color: white;
 	border-radius: 5px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 10px 30px !important;
-	font-size: 0.7857em;
+	font-size: 0.9285em;
 	font-weight: 600;
 }

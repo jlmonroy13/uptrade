@@ -17,12 +17,15 @@ header {
 					a {
 						color: white;
 						font-family: 'Open Sans', sans-serif;
-						font-size: 1em;
+						font-size: 0.9285em;
 						font-weight: 500;
 					}
 					&:last-child {
 						margin-top: 5px;
 						margin-left: 25px;
+						a {
+							background-color: $light-green;
+						}
 					}
 				}
 			}
