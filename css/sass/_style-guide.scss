@@ -1,0 +1,15 @@
+$light-green: #95D700;
+
+a {
+	text-decoration: none;
+}
+// Main Button
+.green-btn {
+	color: white;
+	background-color: $light-green;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	padding: 7px 22px !important;
+	font-size: 0.7857em;
+	font-weight: 600;
+}
