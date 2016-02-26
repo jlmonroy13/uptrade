@@ -3,7 +3,7 @@ a {
 
 .green-btn {
   color: white;
-  background-color: #95d700;
+  background-color: #95D700;
   border-radius: 5px;
   font-family: 'Open Sans', sans-serif;
   padding: 10px 30px !important;
@@ -37,31 +37,34 @@ body .se-container {
     transform-origin: left center; }
     body .se-container .se-slope:nth-child(even) {
       transform: rotate(5deg);
-      margin-top: -200px;
-      box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.4); }
+      margin-top: -200px; }
       body .se-container .se-slope:nth-child(even) .se-content {
         transform: rotate(-5deg);
         color: #e90089;
         padding: 130px 100px 250px 100px; }
         body .se-container .se-slope:nth-child(even) .se-content h3 {
-          background: #e90089;
-          color: #000; }
+          color: white;
+          font-size: 1.5714em;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600; }
+        body .se-container .se-slope:nth-child(even) .se-content p {
+          color: white; }
     body .se-container .se-slope:nth-child(odd) {
-      background: #e90089;
-      transform: rotate(-5deg);
-      box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4) inset; }
+      background: white;
+      transform: rotate(-5deg); }
       body .se-container .se-slope:nth-child(odd) .se-content {
         transform: rotate(5deg);
         color: #000;
         padding: 150px 100px 250px 100px; }
         body .se-container .se-slope:nth-child(odd) .se-content h3 {
-          background: #000;
           color: #e90089; }
   body .se-container .nojoda {
     background: url("../img/bckg/home_1slider_1.jpg") no-repeat;
     background-size: 100%;
-    height: 630px; }
+    height: 650px; }
   body .se-container .home-bckg {
-    background: url("../img/bckg/home_bckg3.jpg") no-repeat;
+    background: url("../img/bckg/home_bckg.png") no-repeat;
     background-size: 100%;
-    height: 630px; }
+    height: 500px; }
+
+/*# sourceMappingURL=main.css.map */
