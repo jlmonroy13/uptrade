@@ -2,19 +2,27 @@
 header {
 	.navbar {
 		margin-bottom: 0;
+		.navbar-header {
+			.navbar-brand {
+				img {
+					width: 120%;
+				}
+			}
+		}
 		.collapse {
 			min-height: 100px;
 			ul.nav {
-				margin-top: 15px;
+				margin-top: 20px;
 				li {
 					a {
 						color: white;
 						font-family: 'Open Sans', sans-serif;
-						font-size: 0.7857em;
-						font-weight: 600;
+						font-size: 1em;
+						font-weight: 500;
 					}
 					&:last-child {
-						margin-top: 8px;
+						margin-top: 5px;
+						margin-left: 25px;
 					}
 				}
 			}

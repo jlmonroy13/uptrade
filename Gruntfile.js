@@ -8,9 +8,6 @@ module.exports = function(grunt) {
 		},
 		sass: {
 			css: {
-				options: {
-					sourcemap: 'none',
-				},
 				files: {
 					'css/main.css': 'css/sass/main.scss'
 				},

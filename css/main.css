@@ -3,26 +3,29 @@ a {
 
 .green-btn {
   color: white;
-  background-color: #95D700;
+  background-color: #95d700;
   border-radius: 5px;
   font-family: 'Open Sans', sans-serif;
-  padding: 7px 22px !important;
+  padding: 10px 30px !important;
   font-size: 0.7857em;
   font-weight: 600; }
 
 header .navbar {
   margin-bottom: 0; }
+  header .navbar .navbar-header .navbar-brand img {
+    width: 120%; }
   header .navbar .collapse {
     min-height: 100px; }
     header .navbar .collapse ul.nav {
-      margin-top: 15px; }
+      margin-top: 20px; }
       header .navbar .collapse ul.nav li a {
         color: white;
         font-family: 'Open Sans', sans-serif;
-        font-size: 0.7857em;
-        font-weight: 600; }
+        font-size: 1em;
+        font-weight: 500; }
       header .navbar .collapse ul.nav li:last-child {
-        margin-top: 8px; }
+        margin-top: 5px;
+        margin-left: 25px; }
 
 body .se-container {
   display: block;
@@ -33,7 +36,6 @@ body .se-container {
     margin: 0 -50px;
     transform-origin: left center; }
     body .se-container .se-slope:nth-child(even) {
-      background: #000;
       transform: rotate(5deg);
       margin-top: -200px;
       box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.4); }
@@ -57,5 +59,9 @@ body .se-container {
           color: #e90089; }
   body .se-container .nojoda {
     background: url("../img/bckg/home_1slider_1.jpg") no-repeat;
+    background-size: 100%;
+    height: 630px; }
+  body .se-container .home-bckg {
+    background: url("../img/bckg/home_bckg3.jpg") no-repeat;
     background-size: 100%;
     height: 630px; }
