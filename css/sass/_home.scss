@@ -27,24 +27,39 @@ body {
 				}
 			}
 		}
-		.home-bckg-slider {
-			background: url('../img/bckg/home_1slider_1.jpg') no-repeat;
-			background-size: 100%;
-			height: 650px;
-			h2 {
-				margin: 0;
-				padding-top: 35vh;
-			}
-			p {
+		.home-slider { //SLIDER SOMOS SECTION
+			>a {
+				position: absolute;
+				top: 250px;
 				color: white;
-				font-size: 1.1428em;
-				font-family: 'Open Sans', sans-serif;
-				font-weight: 500;
-				padding-right: 73%;
-				line-height: 1.3;
+				font-size: 1.5714em;
 			}
-		}
-		.home-green-bckg {
+			.slide-next	{
+				right: 100px;
+			}
+			.slide-prev	{
+				left: 100px;
+			}
+			.home-bckg-slider {
+				background: url('../img/bckg/home_1slider_1.jpg') no-repeat;
+				background-size: 100%;
+				height: 650px;
+				h2 {
+					margin: 0 0 0 50px;
+					padding-top: 35vh;
+				}
+				p {
+					color: white;
+					font-size: 1.1428em;
+					font-family: 'Open Sans', sans-serif;
+					font-weight: 500;
+					padding-right: 68%;
+					line-height: 1.3;
+					margin-left: 50px;
+				}
+			}
+		}	
+		.home-green-bckg { //QUIENES SOMOS SECTION
 			background: url('../img/bckg/home_bckg.png') no-repeat;
 			background-size: 100%;
 			height: 500px;
@@ -59,6 +74,87 @@ body {
 			a {
 				background-color: #343D3E;
 			}
+		}
+		.home-whatdo { //¿QUÉ HACEMOS? SECTION
+			.se-content {
+				padding-top: 100px !important;
+				padding-bottom: 210px !important;
+				h2 {
+					text-align: center;
+					color: #333D3E !important;
+				}
+				hr {
+				    border-top: 2px solid $light-green;
+			        width: 161px;
+				}
+				p {
+					color: #768D8C;
+					font-size: 1.1428em;
+					font-family: 'Open Sans', sans-serif;
+					font-weight: 500;
+					line-height: 1.7;
+					text-align: center;
+					padding: 0 18%;
+				}
+				h3 {
+					color: #333D3E;
+					font-size: 1.2857em;
+					font-family: 'Open Sans', sans-serif;
+					font-weight: 500;
+					text-align: center;
+					padding: 0 23%;
+					line-height: 1.7;
+					margin-bottom: 70px;
+				}
+				.row {
+					text-align: center;
+					>div {
+						.rds {
+							margin-bottom: 29px;
+						}
+						.tableau {
+							margin-bottom: 17px;
+						}
+						h4 {
+							text-align: center;
+							font-size: 1.1428em;
+							font-family: 'Open Sans', sans-serif;
+							font-weight: 500;
+							padding: 0 15%;
+						}
+						p {
+						    padding: 0 8%;
+						}
+						a {
+							background-color: $light-green;
+						}
+						&:nth-child(2) {
+							p {
+								padding: 0 12% !important;
+							}
+						}
+					}
+				}
+			}
+		}
+		.home-ourTech{ //NUESTRA TECNOLOGIA SECTION
+			overflow: hidden;
+			box-shadow: 0px -1px 3px rgba(0,0,0,3);
+			.se-content {
+				padding-top: 0 !important;
+				margin-top: -100px;
+				#prueba {
+					background: url('../img/bckg/home_2slider_tech3.jpg') no-repeat;
+					background-size: 100%;
+					height: 850px;
+				}
+			}	
+		}
+		.empa {
+		    transform: rotate(-8deg) !important;
+		    .se-content {
+		    	transform: rotate(8deg) !important;
+		    }
 		}
 	}
 }
