@@ -380,6 +380,40 @@ body .home-whatdo .se-content--quienes-somos {
     color: white;
     font-size: 1.4285rem;
     font-weight: 600; }
+#our-technology .our-technology-productosRel {
+  padding: 35px 0; }
+  #our-technology .our-technology-productosRel .container .row:first-child div img {
+    display: inline-block;
+    margin-right: 15px; }
+  #our-technology .our-technology-productosRel .container .row:first-child div h5 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1.1428rem;
+    font-weight: 600; }
+  #our-technology .our-technology-productosRel .container .row:first-child div p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #5F7A81;
+    line-height: 1.9;
+    max-width: 460px; }
+  #our-technology .our-technology-productosRel .container .row:first-child div:last-child {
+    padding-left: 0; }
+  #our-technology .our-technology-productosRel .container h4 {
+    font-weight: 400;
+    font-size: 1.1428rem;
+    color: #253248; }
+  #our-technology .our-technology-productosRel .container .row:last-child div {
+    text-align: center; }
+    #our-technology .our-technology-productosRel .container .row:last-child div img {
+      width: 100%; }
+    #our-technology .our-technology-productosRel .container .row:last-child div p {
+      color: #263347;
+      font-weight: 600;
+      font-size: 0.9285rem;
+      line-height: 1;
+      margin-bottom: 0; }
+      #our-technology .our-technology-productosRel .container .row:last-child div p:last-child {
+        color: #768C8C; }
 
 /* footer styles */
 footer {
