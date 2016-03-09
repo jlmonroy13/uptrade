@@ -23,11 +23,14 @@ header .navbar {
     min-height: 100px; }
     header .navbar .collapse ul.nav {
       margin-top: 20px; }
-      header .navbar .collapse ul.nav li a {
+      header .navbar .collapse ul.nav li > a {
         color: white;
         font-family: 'Open Sans', sans-serif;
         font-size: 0.9285em;
         font-weight: 500; }
+        header .navbar .collapse ul.nav li > a:hover {
+          background-color: transparent;
+          color: #95D700; }
       header .navbar .collapse ul.nav li:last-child {
         margin-top: 5px;
         margin-left: 25px; }
@@ -81,7 +84,7 @@ body .se-container {
       font-size: 1.1428em;
       font-family: 'Open Sans', sans-serif;
       font-weight: 500;
-      padding-right: 68%;
+      max-width: 315px;
       line-height: 1.3;
       margin-left: 50px; }
   body .se-container .home-green-bckg {

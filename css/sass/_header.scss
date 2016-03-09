@@ -14,11 +14,15 @@ header {
 			ul.nav {
 				margin-top: 20px;
 				li {
-					a {
+					>a {
 						color: white;
 						font-family: 'Open Sans', sans-serif;
 						font-size: 0.9285em;
 						font-weight: 500;
+						&:hover {
+							background-color: transparent;
+							color: $light-green;
+						}
 					}
 					&:last-child {
 						margin-top: 5px;
