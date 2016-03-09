@@ -105,50 +105,6 @@ body .se-container {
       line-height: 1.7; }
     body .se-container .home-green-bckg a {
       background-color: #343D3E; }
-  body .se-container .home-whatdo .se-content {
-    padding-top: 100px !important;
-    padding-bottom: 210px !important; }
-    body .se-container .home-whatdo .se-content h2 {
-      text-align: center;
-      color: #333D3E !important; }
-    body .se-container .home-whatdo .se-content hr {
-      border-top: 2px solid #95D700;
-      width: 161px; }
-    body .se-container .home-whatdo .se-content p {
-      color: #768D8C;
-      font-size: 1.1428em;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 500;
-      line-height: 1.7;
-      text-align: center;
-      padding: 0 18%; }
-    body .se-container .home-whatdo .se-content h3 {
-      color: #333D3E;
-      font-size: 1.2857em;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 500;
-      text-align: center;
-      padding: 0 23%;
-      line-height: 1.7;
-      margin-bottom: 70px; }
-    body .se-container .home-whatdo .se-content .row {
-      text-align: center; }
-      body .se-container .home-whatdo .se-content .row > div .rds {
-        margin-bottom: 29px; }
-      body .se-container .home-whatdo .se-content .row > div .tableau {
-        margin-bottom: 17px; }
-      body .se-container .home-whatdo .se-content .row > div h4 {
-        text-align: center;
-        font-size: 1.1428em;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 500;
-        padding: 0 15%; }
-      body .se-container .home-whatdo .se-content .row > div p {
-        padding: 0 8%; }
-      body .se-container .home-whatdo .se-content .row > div a {
-        background-color: #95D700; }
-      body .se-container .home-whatdo .se-content .row > div:nth-child(2) p {
-        padding: 0 12% !important; }
   body .se-container .home-ourTech {
     overflow: hidden;
     box-shadow: 0px -1px 3px black; }
@@ -237,15 +193,128 @@ body .se-container {
         font-size: 1.2857rem;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400; }
+body .home-whatdo .se-content {
+  padding-top: 100px !important;
+  padding-bottom: 210px !important; }
+  body .home-whatdo .se-content h2 {
+    text-align: center;
+    color: #333D3E !important; }
+  body .home-whatdo .se-content hr {
+    border-top: 2px solid #95D700;
+    width: 161px; }
+  body .home-whatdo .se-content p {
+    color: #768D8C;
+    font-size: 1.1428em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    line-height: 1.7;
+    text-align: center;
+    padding: 0 18%; }
+  body .home-whatdo .se-content h3 {
+    color: #333D3E;
+    font-size: 1.2857em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 23%;
+    line-height: 1.7;
+    margin-bottom: 70px; }
+  body .home-whatdo .se-content .row {
+    text-align: center; }
+    body .home-whatdo .se-content .row > div .rds {
+      margin-bottom: 29px; }
+    body .home-whatdo .se-content .row > div .tableau {
+      margin-bottom: 17px; }
+    body .home-whatdo .se-content .row > div h4 {
+      text-align: center;
+      font-size: 1.1428em;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 500;
+      padding: 0 15%; }
+    body .home-whatdo .se-content .row > div p {
+      padding: 0 8%; }
+    body .home-whatdo .se-content .row > div a {
+      background-color: #95D700; }
+    body .home-whatdo .se-content .row > div:nth-child(2) p {
+      padding: 0 12% !important; }
 
 .description {
   text-align: center;
   background: url("../img/bckg/quienes-somos_bckg.jpg");
-  background-size: cover; }
+  background-size: cover;
+  margin-top: -102px;
+  padding: 9.2857rem 25px; }
   .description__legend {
     font-size: 1.5714rem;
     color: white;
+    max-width: 610px;
+    margin: 0.8214rem auto; }
+    .description__legend--small {
+      font-size: 1.1428rem; }
+
+.team {
+  padding-bottom: 3em; }
+  .team__people {
+    margin-top: -99px; }
+  .team__person {
+    text-align: center;
+    margin: 0.8rem 0; }
+    .team__person--first-one {
+      margin-left: 12.5%; }
+    .team__person--first-two {
+      margin-left: 25%; }
+    .team__person__photo {
+      border: 2px solid #7EA09F;
+      border-radius: 50%;
+      width: 198px;
+      height: 198px;
+      margin-bottom: 12px; }
+    .team__person__name {
+      font-size: 1.1428rem;
+      color: #9BB325;
+      font-weight: 700;
+      margin: 0; }
+    .team__person__position {
+      font-size: 0.9285rem;
+      color: #7B9492;
+      font-weight: 600;
+      margin: 0; }
+
+.home-whatdo--quienes-somos {
+  background-color: #F6F6F6; }
+
+body .home-whatdo .se-content--quienes-somos {
+  padding-top: 3.3rem !important;
+  padding-bottom: 4.3rem !important; }
+
+.how-do {
+  text-align: center;
+  padding: 2.9rem 0; }
+  .how-do__title {
+    color: #333D3E;
+    font-size: 1.5714rem;
+    font-weight: 600;
+    margin: 0; }
+    .how-do__title:after {
+      content: "";
+      border-bottom: 2px solid #95D700;
+      width: 230px;
+      display: block;
+      margin: 1.2rem auto 0 auto; }
+  .how-do__legend {
+    color: #B1C54A;
+    font-size: 1.2857rem;
+    font-weight: 600;
+    margin: 3rem auto;
     max-width: 480px; }
+  .how-do__description {
+    color: #768C8C;
+    font-size: 1rem;
+    text-align: left;
+    max-width: 390px;
+    font-weight: 600; }
+  .how-do__first-description {
+    margin-left: 8.33%; }
 
 /* footer styles */
 footer {
