@@ -1,0 +1,10 @@
+.description {
+	text-align: center;
+	background: url("../img/bckg/quienes-somos_bckg.jpg");
+	background-size: cover;
+	&__legend {
+		font-size: 1.5714rem;
+		color: white;
+		max-width: 480px;
+	}
+}
