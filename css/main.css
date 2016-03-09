@@ -1,10 +1,15 @@
+html {
+  font-size: 14px; }
+
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 a {
   text-decoration: none; }
 
 h2 {
   color: white;
   font-size: 1.5714em;
-  font-family: 'Open Sans', sans-serif;
   font-weight: 600; }
 
 .btn {
@@ -232,6 +237,15 @@ body .se-container {
         font-size: 1.2857rem;
         font-family: 'Open Sans', sans-serif;
         font-weight: 400; }
+
+.description {
+  text-align: center;
+  background: url("../img/bckg/quienes-somos_bckg.jpg");
+  background-size: cover; }
+  .description__legend {
+    font-size: 1.5714rem;
+    color: white;
+    max-width: 480px; }
 
 /* footer styles */
 footer {
