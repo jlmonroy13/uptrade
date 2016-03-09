@@ -247,6 +247,71 @@ body .se-container {
     color: white;
     max-width: 480px; }
 
+#our-technology .our-technology-main {
+  background: url("../img/bckg/nuestra-tecnologia_bckg.jpg") no-repeat;
+  background-size: cover;
+  padding: 17.3571rem 0;
+  text-align: center;
+  margin-top: -102px; }
+  #our-technology .our-technology-main h2 {
+    font-weight: 600;
+    font-size: 1.7142rem; }
+  #our-technology .our-technology-main h4 {
+    color: white;
+    font-size: 1.4285rem;
+    font-weight: 600; }
+#our-technology .our-technology-audit {
+  padding: 35px 0; }
+  #our-technology .our-technology-audit .container {
+    text-align: center; }
+    #our-technology .our-technology-audit .container img {
+      display: inline-block; }
+    #our-technology .our-technology-audit .container h5 {
+      display: inline-block;
+      font-size: 1.1428rem;
+      color: #253247;
+      font-weight: 600;
+      vertical-align: middle;
+      margin-left: 20px; }
+    #our-technology .our-technology-audit .container > p {
+      color: #5F7A81;
+      font-size: 1.1428rem;
+      font-weight: 300;
+      max-width: 782px;
+      margin: 30px auto;
+      line-height: 1.7; }
+      #our-technology .our-technology-audit .container > p span {
+        font-weight: 700; }
+    #our-technology .our-technology-audit .container hr {
+      width: 89%;
+      border-top: 2.5px solid #ddd; }
+    #our-technology .our-technology-audit .container .row {
+      padding-left: 6%; }
+      #our-technology .our-technology-audit .container .row h4 {
+        color: #253246;
+        font-size: 1.1428rem;
+        font-weight: 600;
+        text-align: left; }
+      #our-technology .our-technology-audit .container .row p {
+        color: #5F7A81;
+        font-size: 1rem;
+        font-weight: 300;
+        text-align: left;
+        max-width: 283px;
+        line-height: 1.8; }
+#our-technology .our-technology-rds {
+  background: url("../img/bckg/nuestra-tecnologia_RDSbckg.jpg") no-repeat;
+  background-size: cover;
+  padding: 17.3571rem 0;
+  text-align: center; }
+  #our-technology .our-technology-rds h2 {
+    font-weight: 600;
+    font-size: 1.7142rem; }
+  #our-technology .our-technology-rds h4 {
+    color: white;
+    font-size: 1.4285rem;
+    font-weight: 600; }
+
 /* footer styles */
 footer {
   background: url("../img/bckg/footer_bckg.jpg");
