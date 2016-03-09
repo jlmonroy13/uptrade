@@ -34,6 +34,11 @@ header .navbar {
         header .navbar .collapse ul.nav li:last-child a {
           background-color: #95D700; }
 
+/* home styles */
+hr {
+  border-top: 2.5px solid #95D700;
+  width: 161px; }
+
 body .se-container {
   display: block;
   width: 100%;
@@ -61,9 +66,9 @@ body .se-container {
     color: white;
     font-size: 1.5714em; }
   body .se-container .home-slider .slide-next {
-    right: 100px; }
+    right: 70px; }
   body .se-container .home-slider .slide-prev {
-    left: 100px; }
+    left: 70px; }
   body .se-container .home-slider .home-bckg-slider {
     background: url("../img/bckg/home_1slider_1.jpg") no-repeat;
     background-size: 100%;
@@ -142,13 +147,146 @@ body .se-container {
     body .se-container .home-ourTech .se-content {
       padding-top: 0 !important;
       margin-top: -100px; }
-      body .se-container .home-ourTech .se-content #prueba {
+      body .se-container .home-ourTech .se-content .bck-img-tech {
         background: url("../img/bckg/home_2slider_tech3.jpg") no-repeat;
         background-size: 100%;
-        height: 850px; }
-  body .se-container .empa {
+        height: 850px;
+        padding-top: 270px;
+        text-align: center; }
+        body .se-container .home-ourTech .se-content .bck-img-tech h2 {
+          font-size: 1.5714rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 600;
+          margin-bottom: 15px; }
+        body .se-container .home-ourTech .se-content .bck-img-tech h3 {
+          font-size: 1.2857rem !important;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          color: white;
+          margin-bottom: 10px;
+          margin-top: 0; }
+        body .se-container .home-ourTech .se-content .bck-img-tech hr {
+          margin-top: 10px;
+          width: 131px; }
+        body .se-container .home-ourTech .se-content .bck-img-tech p {
+          font-size: 1rem;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          color: white;
+          padding: 0 35%; }
+        body .se-container .home-ourTech .se-content .bck-img-tech .btn {
+          background-color: #95D700; }
+        body .se-container .home-ourTech .se-content .bck-img-tech .slidebtn {
+          position: absolute;
+          top: 400px;
+          color: white;
+          font-size: 1.5714em; }
+        body .se-container .home-ourTech .se-content .bck-img-tech .slide-next {
+          right: 90px; }
+        body .se-container .home-ourTech .se-content .bck-img-tech .slide-prev {
+          left: 90px; }
+  body .se-container .home-ourClients {
     transform: rotate(-8deg) !important; }
-    body .se-container .empa .se-content {
-      transform: rotate(8deg) !important; }
+    body .se-container .home-ourClients .se-content {
+      transform: rotate(8deg) !important;
+      text-align: center;
+      padding: 100px 0 0 0 !important; }
+      body .se-container .home-ourClients .se-content h1 {
+        color: #333D3E;
+        font-weight: 400;
+        font-size: 1.5714rem; }
+      body .se-container .home-ourClients .se-content hr {
+        width: 330px; }
+      body .se-container .home-ourClients .se-content .clients-logos img {
+        width: 14%;
+        margin-right: 30px; }
+        body .se-container .home-ourClients .se-content .clients-logos img:last-child {
+          margin-right: 0; }
+      body .se-container .home-ourClients .se-content .clients-sliderBtns {
+        text-align: center;
+        margin-bottom: 60px; }
+        body .se-container .home-ourClients .se-content .clients-sliderBtns a span {
+          display: inline-block;
+          height: 10px;
+          width: 10px;
+          border-radius: 50%;
+          background-color: black;
+          border: 2px solid black; }
+        body .se-container .home-ourClients .se-content .clients-sliderBtns a:last-child span {
+          background-color: white; }
+      body .se-container .home-ourClients .se-content > p {
+        color: #333D3E;
+        font-size: 1.7142rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 30px; }
+      body .se-container .home-ourClients .se-content > a {
+        background-color: #95D700;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1.2857rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400; }
+
+/* footer styles */
+footer {
+  background: url("../img/bckg/footer_bckg.jpg");
+  padding-top: 90px; }
+  footer > .container {
+    position: relative; }
+    footer > .container p {
+      color: white;
+      font-size: 1.2857rem;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      line-height: 1.4;
+      margin: 0 0 0 5px; }
+      footer > .container p:first-child {
+        margin: 0 0 15px 0; }
+      footer > .container p:nth-child(5) {
+        margin-bottom: 35px; }
+      footer > .container p:nth-child(6) {
+        display: inline-block; }
+    footer > .container .social-networks {
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 23%; }
+      footer > .container .social-networks a {
+        margin-right: 30px; }
+        footer > .container .social-networks a img {
+          width: 19%;
+          opacity: 0.8; }
+          footer > .container .social-networks a img:hover {
+            opacity: 1; }
+    footer > .container > a {
+      color: white;
+      font-size: 1.2857rem;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400; }
+  footer .minifooter {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+    margin-top: 60px; }
+    footer .minifooter .container {
+      vertical-align: middle; }
+      footer .minifooter .container span {
+        color: white;
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400; }
+      footer .minifooter .container ul {
+        float: right;
+        margin: 0; }
+        footer .minifooter .container ul li {
+          display: inline-block;
+          margin-right: 25px; }
+          footer .minifooter .container ul li a {
+            color: white;
+            font-size: 1rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400; }
 
 /*# sourceMappingURL=main.css.map */
