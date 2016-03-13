@@ -3,262 +3,37 @@ hr {
     border-top: 2.5px solid $light-green;
     width: 161px;
 }
-body {
-	.se-container {
-		display: block; 
-		width: 100%;
-		overflow: hidden;
-		margin-top: -102px;
-		.se-slope {
-			margin: 0 -50px;
-			transform-origin: left center;
-			&:nth-child(even) {
-				transform: rotate(5deg);
-				margin-top: -200px;
-				// box-shadow: 0px -1px 3px rgba(0,0,0,0.4);
-				.se-content {
-					transform: rotate(-5deg);
-					padding-top: 50px;
-				}
-			}
-			&:nth-child(odd) {
-				background: white;
-				transform: rotate(-5deg);
-				// box-shadow: 0px 2px 3px rgba(0,0,0,0.4) inset;
-				.se-content {
-					transform: rotate(5deg);
-					color: #000;
-					padding: 150px 100px 250px 100px;
-				}
-			}
+.home-slider {
+	background: url('../img/bckg/home_bckg1.jpg') no-repeat;
+	background-size: cover;
+	height: 597px;
+	margin-top: -102px;
+	padding-top: 200px;
+	.home-bckg-slider {
+		margin-left: 10%;
+		h2 {
+			font-weight: 700;
+			font-size: 1.5714rem;
 		}
-		.home-slider { //SLIDER SOMOS SECTION
-			>a { 
-				position: absolute;
-				top: 250px;
-				color: white;
-				font-size: 1.5714em;
-			}
-			.slide-next	{
-				right: 70px;
-			}
-			.slide-prev	{
-				left: 70px; 
-			}
-			.home-bckg-slider {
-				background: url('../img/bckg/home_1slider_1.jpg') no-repeat;
-				background-size: cover;
-				height: 650px;
-				padding-left: 10%;
-				h2 {
-					margin: 0 0 0 50px;
-					padding-top: 35vh;
-				}
-				p {
-					color: white;
-					font-size: 1.1428em;
-					font-family: 'Open Sans', sans-serif;
-					font-weight: 500;
-					max-width: 315px;
-					line-height: 1.3;
-					margin-left: 50px;
-				}
-			}
-		}	
-		.home-green-bckg { //QUIENES SOMOS SECTION
-			background: url('../img/bckg/home_bckg.png') no-repeat;
-			background-size: 100%;
-			height: 500px;
-			p {
-				color: white;
-				font-size: 1.1428em;
-				font-family: 'Open Sans', sans-serif;
-				font-weight: 500;
-				padding-right: 58%;
-				line-height: 1.7;
-			}
-			a {
-				background-color: #343D3E;
-			}
-		}		
-		.home-ourTech{ //NUESTRA TECNOLOGIA SECTION
-			overflow: hidden;
-			box-shadow: 0px -1px 3px rgba(0,0,0,1);
-			.se-content {
-				padding-top: 0 !important;
-				margin-top: -100px;
-				.bck-img-tech {
-					background: url('../img/bckg/home_2slider_tech3.jpg') no-repeat;
-					background-size: 100%;
-					height: 850px;
-					padding-top: 270px;
-					text-align: center;
-					h2 {
-						font-size: 1.5714rem;
-						font-family: 'Open Sans', sans-serif;
-						font-weight: 600;
-						margin-bottom: 15px;
-					}
-					h3 {
-						font-size: 1.2857rem !important;
-						font-family: 'Open Sans', sans-serif;
-						font-weight: 400;
-						color: white;
-						margin-bottom: 10px;
-						margin-top: 0;
-					}
-					hr {
-						margin-top: 10px;
-						width: 131px;
-					}
-					p {
-						font-size: 1rem;
-						font-family: 'Open Sans', sans-serif;
-						font-weight: 400;
-						color: white;
-						padding: 0 35%;					
-					}
-					.btn {
-						background-color: $light-green;
-					}
-					.slidebtn { 
-						position: absolute;
-						top: 400px;
-						color: white;
-						font-size: 1.5714em;
-					}
-					.slide-next	{
-						right: 90px;
-					}
-					.slide-prev	{
-						left: 90px; 
-					}
-				}
-			}	
-		}
-		.home-ourClients {
-		    transform: rotate(-7deg) !important;
-		    .se-content {
-		    	transform: rotate(8deg) !important;
-		    	text-align: center;
-		    	padding: 100px 0 0 0 !important;
-		    	h1 {
-		    		color: #333D3E;
-		    		font-weight: 400;
-		    		font-size: 1.5714rem;
-		    	}
-		    	hr {
-		    		width: 330px;
-		    	}
-		    	.clients-logos {
-		    		img {
-		    			width: 14%;
-		    			margin-right: 30px;
-		    			&:last-child {
-		    				margin-right: 0;
-		    			}
-		    		}
-		    	}
-		    	.clients-sliderBtns {
-		    		text-align: center;
-		    		margin-bottom: 60px;
-		    		a {
-		    			span {
-		    				display: inline-block;
-		    				height: 10px;
-							width: 10px;
-							border-radius: 50%;
-							background-color: black;
-							border: 2px solid black;
-		    			}
-		    			&:last-child {
-		    				span {
-		    					background-color: white;
-		    				}
-		    			}
-		    		}
-		    	}
-		    	>p {
-		    		color: #333D3E;
-		    		font-size: 1.7142rem;
-					font-family: 'Open Sans', sans-serif;
-					font-weight: 400;
-					display: inline-block;
-					vertical-align: middle;
-					margin-right: 30px;
-		    	}
-		    	>a {
-		    		background-color: $light-green;
-		    		display: inline-block;
-		    		vertical-align: middle;
-		    		font-size: 1.2857rem;
-		    		font-family: 'Open Sans', sans-serif;
-		    		font-weight: 400;
-		    	}
-		    }
+		p {
+			font-weight: 600;
+			font-size: 1.1428rem;
+			color: white;
+			max-width: 326px;
 		}
 	}
-	.home-whatdo { //¿QUÉ HACEMOS? SECTION
-		.se-content {
-			padding-top: 100px !important;
-			padding-bottom: 210px !important;
-			h2 {
-				text-align: center;
-				color: #333D3E !important;
-			}
-			hr {
-			    border-top: 2px solid $light-green;
-		        width: 161px;
-			}
-			p {
-				color: #768D8C;
-				font-size: 1.1428em;
-				font-family: 'Open Sans', sans-serif;
-				font-weight: 500;
-				line-height: 1.7;
-				text-align: center;
-				padding: 0 18%;
-			}
-			h3 {
-				color: #333D3E;
-				font-size: 1.2857em;
-				font-family: 'Open Sans', sans-serif;
-				font-weight: 500;
-				text-align: center;
-				padding: 0 23%;
-				line-height: 1.7;
-				margin-bottom: 70px;
-			}
-			.row {
-				text-align: center;
-				>div {
-					.rds {
-						margin-bottom: 29px;
-					}
-					.tableau {
-						margin-bottom: 17px;
-					}
-					h4 {
-						text-align: center;
-						font-size: 1.1428em;
-						font-family: 'Open Sans', sans-serif;
-						font-weight: 500;
-						padding: 0 15%;
-					}
-					p {
-					    padding: 0 8%;
-					}
-					a {
-						background-color: $light-green;
-					}
-					&:nth-child(2) {
-						p {
-							padding: 0 12% !important;
-						}
-					}
-				}
-			}
+	>a {
+		position: absolute;
+		top: 240px;
+		font-size: 1.5714rem;
+	}
+	.slide-next {
+			right: 60px;
 		}
+	.slide-prev {
+		left: 60px;
 	}
 }
+
+
 

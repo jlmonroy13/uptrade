@@ -94,197 +94,30 @@ hr {
   border-top: 2.5px solid #95D700;
   width: 161px; }
 
-body .se-container {
-  display: block;
-  width: 100%;
-  overflow: hidden;
-  margin-top: -102px; }
-  body .se-container .se-slope {
-    margin: 0 -50px;
-    transform-origin: left center; }
-    body .se-container .se-slope:nth-child(even) {
-      transform: rotate(5deg);
-      margin-top: -200px; }
-      body .se-container .se-slope:nth-child(even) .se-content {
-        transform: rotate(-5deg);
-        padding-top: 50px; }
-    body .se-container .se-slope:nth-child(odd) {
-      background: white;
-      transform: rotate(-5deg); }
-      body .se-container .se-slope:nth-child(odd) .se-content {
-        transform: rotate(5deg);
-        color: #000;
-        padding: 150px 100px 250px 100px; }
-  body .se-container .home-slider > a {
+.home-slider {
+  background: url("../img/bckg/home_bckg1.jpg") no-repeat;
+  background-size: cover;
+  height: 597px;
+  margin-top: -102px;
+  padding-top: 200px; }
+  .home-slider .home-bckg-slider {
+    margin-left: 10%; }
+    .home-slider .home-bckg-slider h2 {
+      font-weight: 700;
+      font-size: 1.5714rem; }
+    .home-slider .home-bckg-slider p {
+      font-weight: 600;
+      font-size: 1.1428rem;
+      color: white;
+      max-width: 326px; }
+  .home-slider > a {
     position: absolute;
-    top: 250px;
-    color: white;
-    font-size: 1.5714em; }
-  body .se-container .home-slider .slide-next {
-    right: 70px; }
-  body .se-container .home-slider .slide-prev {
-    left: 70px; }
-  body .se-container .home-slider .home-bckg-slider {
-    background: url("../img/bckg/home_1slider_1.jpg") no-repeat;
-    background-size: cover;
-    height: 650px;
-    padding-left: 10%; }
-    body .se-container .home-slider .home-bckg-slider h2 {
-      margin: 0 0 0 50px;
-      padding-top: 35vh; }
-    body .se-container .home-slider .home-bckg-slider p {
-      color: white;
-      font-size: 1.1428em;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 500;
-      max-width: 315px;
-      line-height: 1.3;
-      margin-left: 50px; }
-  body .se-container .home-green-bckg {
-    background: url("../img/bckg/home_bckg.png") no-repeat;
-    background-size: 100%;
-    height: 500px; }
-    body .se-container .home-green-bckg p {
-      color: white;
-      font-size: 1.1428em;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 500;
-      padding-right: 58%;
-      line-height: 1.7; }
-    body .se-container .home-green-bckg a {
-      background-color: #343D3E; }
-  body .se-container .home-ourTech {
-    overflow: hidden;
-    box-shadow: 0px -1px 3px black; }
-    body .se-container .home-ourTech .se-content {
-      padding-top: 0 !important;
-      margin-top: -100px; }
-      body .se-container .home-ourTech .se-content .bck-img-tech {
-        background: url("../img/bckg/home_2slider_tech3.jpg") no-repeat;
-        background-size: 100%;
-        height: 850px;
-        padding-top: 270px;
-        text-align: center; }
-        body .se-container .home-ourTech .se-content .bck-img-tech h2 {
-          font-size: 1.5714rem;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 600;
-          margin-bottom: 15px; }
-        body .se-container .home-ourTech .se-content .bck-img-tech h3 {
-          font-size: 1.2857rem !important;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 400;
-          color: white;
-          margin-bottom: 10px;
-          margin-top: 0; }
-        body .se-container .home-ourTech .se-content .bck-img-tech hr {
-          margin-top: 10px;
-          width: 131px; }
-        body .se-container .home-ourTech .se-content .bck-img-tech p {
-          font-size: 1rem;
-          font-family: 'Open Sans', sans-serif;
-          font-weight: 400;
-          color: white;
-          padding: 0 35%; }
-        body .se-container .home-ourTech .se-content .bck-img-tech .btn {
-          background-color: #95D700; }
-        body .se-container .home-ourTech .se-content .bck-img-tech .slidebtn {
-          position: absolute;
-          top: 400px;
-          color: white;
-          font-size: 1.5714em; }
-        body .se-container .home-ourTech .se-content .bck-img-tech .slide-next {
-          right: 90px; }
-        body .se-container .home-ourTech .se-content .bck-img-tech .slide-prev {
-          left: 90px; }
-  body .se-container .home-ourClients {
-    transform: rotate(-7deg) !important; }
-    body .se-container .home-ourClients .se-content {
-      transform: rotate(8deg) !important;
-      text-align: center;
-      padding: 100px 0 0 0 !important; }
-      body .se-container .home-ourClients .se-content h1 {
-        color: #333D3E;
-        font-weight: 400;
-        font-size: 1.5714rem; }
-      body .se-container .home-ourClients .se-content hr {
-        width: 330px; }
-      body .se-container .home-ourClients .se-content .clients-logos img {
-        width: 14%;
-        margin-right: 30px; }
-        body .se-container .home-ourClients .se-content .clients-logos img:last-child {
-          margin-right: 0; }
-      body .se-container .home-ourClients .se-content .clients-sliderBtns {
-        text-align: center;
-        margin-bottom: 60px; }
-        body .se-container .home-ourClients .se-content .clients-sliderBtns a span {
-          display: inline-block;
-          height: 10px;
-          width: 10px;
-          border-radius: 50%;
-          background-color: black;
-          border: 2px solid black; }
-        body .se-container .home-ourClients .se-content .clients-sliderBtns a:last-child span {
-          background-color: white; }
-      body .se-container .home-ourClients .se-content > p {
-        color: #333D3E;
-        font-size: 1.7142rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400;
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 30px; }
-      body .se-container .home-ourClients .se-content > a {
-        background-color: #95D700;
-        display: inline-block;
-        vertical-align: middle;
-        font-size: 1.2857rem;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 400; }
-body .home-whatdo .se-content {
-  padding-top: 100px !important;
-  padding-bottom: 210px !important; }
-  body .home-whatdo .se-content h2 {
-    text-align: center;
-    color: #333D3E !important; }
-  body .home-whatdo .se-content hr {
-    border-top: 2px solid #95D700;
-    width: 161px; }
-  body .home-whatdo .se-content p {
-    color: #768D8C;
-    font-size: 1.1428em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    line-height: 1.7;
-    text-align: center;
-    padding: 0 18%; }
-  body .home-whatdo .se-content h3 {
-    color: #333D3E;
-    font-size: 1.2857em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    padding: 0 23%;
-    line-height: 1.7;
-    margin-bottom: 70px; }
-  body .home-whatdo .se-content .row {
-    text-align: center; }
-    body .home-whatdo .se-content .row > div .rds {
-      margin-bottom: 29px; }
-    body .home-whatdo .se-content .row > div .tableau {
-      margin-bottom: 17px; }
-    body .home-whatdo .se-content .row > div h4 {
-      text-align: center;
-      font-size: 1.1428em;
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 500;
-      padding: 0 15%; }
-    body .home-whatdo .se-content .row > div p {
-      padding: 0 8%; }
-    body .home-whatdo .se-content .row > div a {
-      background-color: #95D700; }
-    body .home-whatdo .se-content .row > div:nth-child(2) p {
-      padding: 0 12% !important; }
+    top: 240px;
+    font-size: 1.5714rem; }
+  .home-slider .slide-next {
+    right: 60px; }
+  .home-slider .slide-prev {
+    left: 60px; }
 
 .description {
   text-align: center;
@@ -554,7 +387,7 @@ body .home-whatdo .se-content--quienes-somos {
   text-align: center;
   padding-top: 230px; }
   .productos-bckg--nsg {
-    background: url("../img/bckg/producto-nsg-bckg.jpg"); }
+    background: url("../img/bckg/producto-bckg-nsg.jpg"); }
   .productos-bckg__title {
     font-size: 1.5714rem;
     font-weight: 600;
