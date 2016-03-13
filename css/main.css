@@ -37,6 +37,9 @@ button {
   background-color: transparent;
   border: none; }
 
+li {
+  list-style: none; }
+
 header {
   height: 102px; }
   header .navbar-collap {
@@ -522,11 +525,18 @@ body .home-whatdo .se-content--quienes-somos {
 .bar {
   background: url("../img/bckg/productos_bckg.png");
   background-size: cover;
+  height: 494px;
   margin-top: -165px;
-  padding: 150px 10% 265px 10%; }
+  padding: 150px 10%; }
   .bar__title {
     color: white;
     font-size: 2.5rem; }
+  .bar__legend {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    max-width: 755px;
+    line-height: 2; }
 
 .productos {
   text-align: center;
@@ -548,16 +558,88 @@ body .home-whatdo .se-content--quienes-somos {
       color: black; }
 
 .productos-bckg {
-  background: url("../img/bckg/producto-nsg-bckg.jpg");
-  background-size: cover;
   height: 597px;
   margin-top: -102px;
   text-align: center;
   padding-top: 230px; }
+  .productos-bckg--url {
+    background: url("../img/bckg/producto-nsg-bckg.jpg");
+    background-size: cover; }
   .productos-bckg__title {
     font-size: 1.5714rem;
     font-weight: 600;
     color: white; }
+  .productos-bckg__legend {
+    font-size: 1.2rem;
+    color: #DDDDDD;
+    font-weight: 600; }
+
+.advantages {
+  padding: 3rem 0; }
+  .advantages__item {
+    text-align: left; }
+  .advantages__title {
+    font-size: 1.2rem;
+    color: #253248;
+    font-weight: 700; }
+  .advantages__legend {
+    font-size: 1.2rem;
+    color: #5F7980;
+    font-weight: 300;
+    display: inline-block;
+    margin: 10px 0; }
+  .advantages__container-image {
+    text-align: center;
+    margin-top: 5.7rem; }
+  .advantages__image {
+    width: 60%; }
+  .advantages__icon {
+    display: inline-block;
+    margin-right: 10px; }
+    .advantages__icon--aumentar {
+      background: url("../img/icn/producto-nsg-sprites.png") no-repeat 0 0;
+      width: 20px;
+      height: 19px; }
+    .advantages__icon--disminuir {
+      background: url("../img/icn/producto-nsg-sprites.png") no-repeat 0 -29px;
+      width: 23px;
+      height: 21px; }
+    .advantages__icon--optimizar {
+      background: url("../img/icn/producto-nsg-sprites.png") no-repeat 0 -60px;
+      width: 23px;
+      height: 26px; }
+    .advantages__icon--gestionar {
+      background: url("../img/icn/producto-nsg-sprites.png") no-repeat 0 -96px;
+      width: 21px;
+      height: 21px; }
+    .advantages__icon--identificar {
+      background: url("../img/icn/producto-nsg-sprites.png") no-repeat 0 -127px;
+      width: 22px;
+      height: 14px; }
+
+.productos-relacionados {
+  padding: 3rem 0; }
+  .productos-relacionados__title {
+    font-size: 1.2rem;
+    color: #253248;
+    margin-top: 0; }
+  .productos-relacionados__image {
+    width: 90%;
+    margin-bottom: 15px; }
+  .productos-relacionados__image-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #263348;
+    margin: 0;
+    margin-bottom: 5px; }
+  .productos-relacionados__image-legend {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #768C8C;
+    margin: 0;
+    margin-bottom: 5px; }
+  .productos-relacionados__container {
+    text-align: center; }
 
 .map {
   background: url("../img/bckg/contacto_bckg_map.jpg");
