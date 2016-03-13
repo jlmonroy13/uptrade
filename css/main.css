@@ -379,8 +379,11 @@ body .home-whatdo .se-content--quienes-somos {
   margin-top: -102px;
   text-align: center;
   padding-top: 230px; }
-  .productos-bckg--url {
+  .productos-bckg--nsg {
     background: url("../img/bckg/producto-bckg-nsg.jpg");
+    background-size: cover; }
+  .productos-bckg--precios {
+    background: url("../img/bckg/producto-bckg-precios.jpg");
     background-size: cover; }
   .productos-bckg__title {
     font-size: 1.5714rem;
@@ -397,6 +400,9 @@ body .home-whatdo .se-content--quienes-somos {
   height: 494px;
   margin-top: -165px;
   padding: 150px 10%; }
+  @media (max-width: 440px) {
+    .bar {
+      padding: 95px 10%; } }
   .bar__title {
     color: white;
     font-size: 2.5rem; }
@@ -411,6 +417,10 @@ body .home-whatdo .se-content--quienes-somos {
   padding: 3rem 0; }
   .advantages__item {
     text-align: left; }
+    @media (max-width: 570px) {
+      .advantages__item {
+        text-align: center;
+        padding: 0; } }
   .advantages__title {
     font-size: 1.2rem;
     color: #253248;
@@ -420,7 +430,9 @@ body .home-whatdo .se-content--quienes-somos {
     color: #5F7980;
     font-weight: 300;
     display: inline-block;
-    margin: 10px 0; }
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 550px; }
   .advantages__container-image {
     text-align: center;
     margin-top: 5.7rem; }
@@ -428,7 +440,9 @@ body .home-whatdo .se-content--quienes-somos {
     width: 60%; }
   .advantages__icon {
     display: inline-block;
-    margin-right: 10px; }
+    margin-right: 10px;
+    vertical-align: top;
+    margin-top: 14px; }
     .advantages__icon--aumentar {
       background: url("../img/icn/producto-nsg-sprites.png") no-repeat 0 0;
       width: 20px;
@@ -449,6 +463,18 @@ body .home-whatdo .se-content--quienes-somos {
       background: url("../img/icn/producto-nsg-sprites.png") no-repeat 0 -127px;
       width: 22px;
       height: 14px; }
+    .advantages__icon--alinear {
+      background: url("../img/icn/producto-precios-sprites.png") no-repeat 0 0;
+      width: 34px;
+      height: 21px; }
+    .advantages__icon--conocer-variaciones {
+      background: url("../img/icn/producto-precios-sprites.png") no-repeat -7px -35px;
+      width: 19px;
+      height: 20px; }
+    .advantages__icon--conocer-historia {
+      background: url("../img/icn/producto-precios-sprites.png") no-repeat -6px -92px;
+      width: 21px;
+      height: 21px; }
 
 .productos-relacionados {
   padding: 3rem 0; }
