@@ -4,24 +4,6 @@
   height: 597px;
   margin-top: -102px;
 }
-.bar {
-  background: url("../img/bckg/productos_bckg.png");
-  background-size: cover; 
-  height: 494px;
-  margin-top: -165px; 
-  padding: 150px 10%; 
-  &__title {
-    color: white;
-    font-size: 2.5rem;  
-  }
-  &__legend {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: white;
-    max-width: 755px;
-    line-height: 2;
-  }
-}
 .productos {
   text-align: center;
   padding: 10px 25px;

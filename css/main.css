@@ -355,22 +355,6 @@ body .home-whatdo .se-content--quienes-somos {
   height: 597px;
   margin-top: -102px; }
 
-.bar {
-  background: url("../img/bckg/productos_bckg.png");
-  background-size: cover;
-  height: 494px;
-  margin-top: -165px;
-  padding: 150px 10%; }
-  .bar__title {
-    color: white;
-    font-size: 2.5rem; }
-  .bar__legend {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: white;
-    max-width: 755px;
-    line-height: 2; }
-
 .productos {
   text-align: center;
   padding: 10px 25px; }
@@ -395,14 +379,9 @@ body .home-whatdo .se-content--quienes-somos {
   margin-top: -102px;
   text-align: center;
   padding-top: 230px; }
-<<<<<<< HEAD
-  .productos-bckg--nsg {
-    background: url("../img/bckg/producto-bckg-nsg.jpg"); }
-=======
   .productos-bckg--url {
-    background: url("../img/bckg/producto-nsg-bckg.jpg");
+    background: url("../img/bckg/producto-bckg-nsg.jpg");
     background-size: cover; }
->>>>>>> fb06a948f1e40898dbcd0ea41a2087eea89f92ff
   .productos-bckg__title {
     font-size: 1.5714rem;
     font-weight: 600;
@@ -411,6 +390,22 @@ body .home-whatdo .se-content--quienes-somos {
     font-size: 1.2rem;
     color: #DDDDDD;
     font-weight: 600; }
+
+.bar {
+  background: url("../img/bckg/productos_bckg.png");
+  background-size: cover;
+  height: 494px;
+  margin-top: -165px;
+  padding: 150px 10%; }
+  .bar__title {
+    color: white;
+    font-size: 2.5rem; }
+  .bar__legend {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    max-width: 755px;
+    line-height: 2; }
 
 .advantages {
   padding: 3rem 0; }

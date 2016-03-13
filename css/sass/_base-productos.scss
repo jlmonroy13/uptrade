@@ -4,7 +4,7 @@
   text-align: center;
   padding-top: 230px;
   &--url {
-    background: url("../img/bckg/producto-nsg-bckg.jpg");
+    background: url("../img/bckg/producto-bckg-nsg.jpg");  
     background-size: cover;
   }
   &__title {
@@ -18,7 +18,24 @@
     font-weight:  600;
   }
 }
-
+.bar {
+  background: url("../img/bckg/productos_bckg.png");
+  background-size: cover; 
+  height: 494px;
+  margin-top: -165px; 
+  padding: 150px 10%; 
+  &__title {
+    color: white;
+    font-size: 2.5rem;  
+  }
+  &__legend {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    max-width: 755px;
+    line-height: 2;
+  }
+}
 .advantages {
   padding: 3rem 0;
   &__item {
