@@ -12,9 +12,12 @@ a {
   font-weight: 500;
   outline: none; }
   a:hover {
-    background-color: transparent !important; }
+    background-color: transparent !important;
+    outline: none; }
   a:focus {
     background-color: transparent !important;
+    outline: none; }
+  a:active {
     outline: none; }
 
 ul {
@@ -121,6 +124,149 @@ hr {
     right: 60px; }
   .home-slider .slide-prev {
     left: 60px; }
+
+.bar-home {
+  padding-top: 100px !important; }
+  .bar-home h2 {
+    font-weight: 700;
+    font-size: 1.5714rem; }
+  .bar-home p {
+    font-weight: 400;
+    font-size: 1.1428rem;
+    max-width: 514px;
+    color: white;
+    line-height: 1.7; }
+  .bar-home > a {
+    background-color: #343D3E;
+    font-size: 0.8571rem;
+    font-weight: 600; }
+    .bar-home > a:hover {
+      background-color: #343D3E !important;
+      color: white !important; }
+
+.home-whatdo {
+  text-align: center;
+  padding-top: 50px; }
+  .home-whatdo .container h2 {
+    color: #333D3E;
+    font-weight: 600; }
+  .home-whatdo .container p {
+    color: #768E8D;
+    font-weight: 600;
+    font-size: 1.1428rem;
+    max-width: 620px;
+    line-height: 1.7;
+    margin: 16px auto; }
+  .home-whatdo .container h3 {
+    color: #333D3E;
+    font-weight: 600;
+    font-size: 1.2857rem;
+    margin-bottom: 70px; }
+  .home-whatdo .container .row > div h4 {
+    color: #333D3E;
+    font-weight: 600;
+    font-size: 1.1428rem;
+    max-width: 150px;
+    margin: 22px auto; }
+  .home-whatdo .container .row > div p {
+    color: #768E8D;
+    font-weight: 600;
+    font-size: 0.9285rem;
+    max-width: 210px; }
+  .home-whatdo .container .row > div img {
+    margin-bottom: 25px; }
+  .home-whatdo .container .row > div > a {
+    font-weight: 600;
+    font-size: 0.8571rem;
+    background-color: #95D700; }
+    .home-whatdo .container .row > div > a:hover {
+      background-color: #95D700 !important;
+      color: white; }
+  .home-whatdo .container .row > div:nth-child(2) img {
+    margin-bottom: 55px; }
+  .home-whatdo .container .row > div:nth-child(2) p {
+    max-width: 190px; }
+  .home-whatdo .container .row > div:last-child img {
+    margin-bottom: 43px; }
+
+.home-ourTech {
+  background: url("../img/bckg/home_tecno_bckg1.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  height: 860px;
+  padding-top: 280px;
+  position: relative; }
+  .home-ourTech h2 {
+    font-size: 1.5714rem;
+    font-weight: 600; }
+  .home-ourTech h3 {
+    font-weight: 400;
+    font-size: 1.2857rem;
+    color: white; }
+  .home-ourTech hr {
+    width: 121px !important; }
+  .home-ourTech p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    max-width: 373px;
+    margin: 14px auto;
+    line-height: 1.7; }
+  .home-ourTech .btn {
+    font-weight: 600;
+    font-size: 0.8571rem;
+    background-color: #95D700; }
+    .home-ourTech .btn:hover {
+      background-color: #95D700 !important;
+      color: white; }
+  .home-ourTech .slidebtn {
+    position: absolute;
+    top: 400px;
+    font-size: 1.5714rem; }
+  .home-ourTech .slide-next {
+    right: 60px; }
+  .home-ourTech .slide-prev {
+    left: 60px; }
+
+.home-ourClients {
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 80px; }
+  .home-ourClients h1 {
+    color: #333D3E;
+    font-weight: 400;
+    font-size: 1.5714rem; }
+  .home-ourClients hr {
+    width: 250px; }
+  .home-ourClients .clients-logos img {
+    display: inline-block;
+    width: 15%;
+    margin-right: 2%; }
+  .home-ourClients .clients-sliderBtns {
+    margin-bottom: 50px; }
+    .home-ourClients .clients-sliderBtns a span {
+      width: 8px;
+      height: 8px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: black;
+      border: 1px solid black; }
+    .home-ourClients .clients-sliderBtns a:last-child span {
+      background-color: white;
+      border: 1px solid black; }
+  .home-ourClients p {
+    color: #333D3E;
+    font-weight: 400;
+    font-size: 1.7142rem;
+    display: inline-block; }
+  .home-ourClients .btn {
+    font-weight: 600;
+    font-size: 1.2857rem;
+    background-color: #95D700;
+    margin-left: 15px; }
+    .home-ourClients .btn:hover {
+      background-color: #95D700 !important;
+      color: white; }
 
 .description {
   text-align: center;
