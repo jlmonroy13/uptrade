@@ -547,6 +547,18 @@ body .home-whatdo .se-content--quienes-somos {
       text-decoration: none;
       color: black; }
 
+.productos-bckg {
+  background: url("../img/bckg/producto-nsg-bckg.jpg");
+  background-size: cover;
+  height: 597px;
+  margin-top: -102px;
+  text-align: center;
+  padding-top: 230px; }
+  .productos-bckg__title {
+    font-size: 1.5714rem;
+    font-weight: 600;
+    color: white; }
+
 .map {
   background: url("../img/bckg/contacto_bckg_map.jpg");
   background-size: cover;
