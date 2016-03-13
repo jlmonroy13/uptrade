@@ -1,0 +1,104 @@
+.productos-bckg{
+  height: 597px;
+  margin-top: -102px;
+  text-align: center;
+  padding-top: 230px;
+  &--url {
+    background: url("../img/bckg/producto-nsg-bckg.jpg");
+    background-size: cover;
+  }
+  &__title {
+    font-size: 1.5714rem;
+    font-weight: 600;
+    color: white;
+  }
+  &__legend {
+    font-size:  1.2rem;
+    color: #DDDDDD;
+    font-weight:  600;
+  }
+}
+
+.advantages {
+  padding: 3rem 0;
+  &__item {
+    text-align:   left;
+  }
+  &__title {
+    font-size: 1.2rem;
+    color: #253248;
+    font-weight: 700;
+  }
+  &__legend {
+    font-size: 1.2rem;
+    color: #5F7980;
+    font-weight:  300;
+    display:  inline-block;
+    margin: 10px 0;
+  }
+  &__container-image {
+    text-align: center;
+    margin-top: 5.7rem;             
+  }
+  &__image {
+    width:  60%;
+  }
+  &__icon {
+    display:  inline-block; 
+    margin-right:   10px;
+    &--aumentar {
+      background: url('../img/icn/producto-nsg-sprites.png') no-repeat 0 0;
+      width: 20px;
+      height: 19px;
+    }
+    &--disminuir {
+      background: url('../img/icn/producto-nsg-sprites.png') no-repeat 0 -29px;
+      width: 23px;
+      height: 21px;
+    }
+    &--optimizar {
+      background: url('../img/icn/producto-nsg-sprites.png') no-repeat 0 -60px;
+      width: 23px;
+      height: 26px;
+    }
+    &--gestionar {
+      background: url('../img/icn/producto-nsg-sprites.png') no-repeat 0 -96px;
+        width: 21px;
+        height: 21px;
+    }
+    &--identificar {
+      background: url('../img/icn/producto-nsg-sprites.png') no-repeat 0 -127px;
+      width: 22px;
+      height: 14px;
+    }
+  }
+}
+.productos-relacionados {
+  padding: 3rem 0;
+  &__title {
+    font-size: 1.2rem;
+    color: #253248;
+    margin-top: 0;
+  }
+  &__image {
+    width: 90%;
+    margin-bottom: 15px;
+  }
+  &__image-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #263348;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  &__image-legend {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #768C8C;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  &__container {
+    text-align: center;
+  }
+}
