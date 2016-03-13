@@ -1,10 +1,12 @@
-.productos-bckg{
-	background: url("../img/bckg/producto-nsg-bckg.jpg");
+.productos-bckg {
 	background-size: cover;
 	height: 597px;
 	margin-top: -102px;
 	text-align: center;
 	padding-top: 230px;
+	&--nsg {
+		background: url("../img/bckg/producto-nsg-bckg.jpg");
+	}
 	&__title {
 		font-size: 1.5714rem;
 		font-weight: 600;
