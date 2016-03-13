@@ -1,38 +1,76 @@
 // Header Styles
 header {
+	height: 102px;
+	.navbar-collap {
+		background-color: rgba(0,0,0,0.5);
+	}
 	.navbar {
 		margin-bottom: 0;
-		.navbar-header {
-			.navbar-brand {
-				img {
-					width: 120%;
-				}
-			}
-		}
-		.collapse {
-			min-height: 100px;
-			ul.nav {
-				margin-top: 20px;
-				li {
-					>a {
-						color: white;
-						font-family: 'Open Sans', sans-serif;
-						font-size: 0.9285em;
-						font-weight: 500;
-						&:hover {
-							background-color: transparent;
-							color: $light-green;
-						}
+		min-height: 102px;
+		z-index: 1;
+		position: absolute;
+		width: 100%;
+		.container {
+			.navbar-header {
+				.navbar-brand {
+					@media (min-width: 1065px) and (max-width: 1184px) {
+						margin-left: -65px !important;
 					}
-					&:last-child {
-						margin-top: 5px;
-						margin-left: 25px;
-						a {
-							background-color: $light-green;
-						}
+					img {
+						width: 120%;
+					}
+				}
+				.navbar-toggle {
+					span {
+						border: 1px solid white;
 					}
 				}
 			}
-		}
+			.collapse {
+				border: none !important;
+				ul.nav {
+					margin-top: 20px;
+					@media (max-width: 1065px){
+						text-align: right;
+					}
+					li {
+						>a {
+							color: white;
+							font-family: 'Open Sans', sans-serif;
+							font-size: 0.9285em; 
+							font-weight: 500;
+							&:hover {
+								background-color: transparent;
+								color: $light-green;
+							}
+							&:focus {
+								background-color: transparent;
+								color: $light-green;
+								border: none;
+							}
+						}
+						&:last-child {
+							margin-top: 5px;
+							margin-left: 20px;
+							button {
+								background-color: transparent;
+								border: none;
+								a {
+									background-color: $light-green;
+									@media (max-width: 1065px){
+	    								float: right;
+	    								margin-right: 10px;
+	    							}
+	    							&:hover {
+										background-color: $light-green !important;
+										color: white;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}	
 	}
 }

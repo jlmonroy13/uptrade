@@ -1,4 +1,4 @@
-$light-green: #95D700;
+$light-green: #95D700; 
 
 html {
 	font-size: 14px;
@@ -8,6 +8,21 @@ body {
 }
 a {
 	text-decoration: none;
+	color: white;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 0.9285em;
+	font-weight: 500;
+	outline: none;
+	&:hover {
+		background-color: transparent !important;
+	}
+	&:focus {
+		background-color: transparent !important;
+		outline: none;
+	}
+}	
+ul {
+	text-align: right;
 }
 
 h2 {
@@ -26,3 +41,9 @@ h2 {
 	font-size: 0.9285em;
 	font-weight: 600;
 }
+
+button {
+	background-color: transparent;
+	border: none;
+}
+

@@ -47,8 +47,9 @@ body {
 			}
 			.home-bckg-slider {
 				background: url('../img/bckg/home_1slider_1.jpg') no-repeat;
-				background-size: 100%;
+				background-size: cover;
 				height: 650px;
+				padding-left: 10%;
 				h2 {
 					margin: 0 0 0 50px;
 					padding-top: 35vh;
@@ -136,7 +137,7 @@ body {
 			}	
 		}
 		.home-ourClients {
-		    transform: rotate(-8deg) !important;
+		    transform: rotate(-7deg) !important;
 		    .se-content {
 		    	transform: rotate(8deg) !important;
 		    	text-align: center;
