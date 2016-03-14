@@ -106,8 +106,15 @@ hr {
   height: 597px;
   margin-top: -102px;
   padding-top: 200px; }
+  @media (max-width: 730px) {
+    .home-slider {
+      background: url("../img/bckg/home_bckg1_movil.jpg") no-repeat;
+      background-size: cover; } }
   .home-slider .home-bckg-slider {
     margin-left: 10%; }
+    @media (max-width: 950px) {
+      .home-slider .home-bckg-slider {
+        margin-left: 17%; } }
     .home-slider .home-bckg-slider h2 {
       font-weight: 700;
       font-size: 1.5714rem; }
@@ -116,17 +123,29 @@ hr {
       font-size: 1.1428rem;
       color: white;
       max-width: 326px; }
+      @media (max-width: 442px) {
+        .home-slider .home-bckg-slider p {
+          max-width: 303px; } }
   .home-slider > a {
     position: absolute;
     top: 240px;
     font-size: 1.5714rem; }
   .home-slider .slide-next {
     right: 60px; }
+    @media (max-width: 633px) {
+      .home-slider .slide-next {
+        right: 30px; } }
   .home-slider .slide-prev {
     left: 60px; }
+    @media (max-width: 633px) {
+      .home-slider .slide-prev {
+        left: 30px; } }
 
 .bar-home {
   padding-top: 100px !important; }
+  @media (min-width: 1300px) {
+    .bar-home {
+      height: 589px !important; } }
   .bar-home h2 {
     font-weight: 700;
     font-size: 1.5714rem; }
@@ -178,7 +197,8 @@ hr {
   .home-whatdo .container .row > div > a {
     font-weight: 600;
     font-size: 0.8571rem;
-    background-color: #95D700; }
+    background-color: #95D700;
+    margin-bottom: 60px; }
     .home-whatdo .container .row > div > a:hover {
       background-color: #95D700 !important;
       color: white; }
@@ -190,12 +210,16 @@ hr {
     margin-bottom: 43px; }
 
 .home-ourTech {
-  background: url("../img/bckg/home_tecno_bckg1.png") no-repeat;
+  background: url("../img/bckg/home_tecno_bckg1bettter.png") no-repeat;
   background-size: cover;
   text-align: center;
   height: 860px;
   padding-top: 280px;
   position: relative; }
+  @media (min-width: 1300px) {
+    .home-ourTech {
+      height: 1070px;
+      padding-top: 480px; } }
   .home-ourTech h2 {
     font-size: 1.5714rem;
     font-weight: 600; }
@@ -212,6 +236,9 @@ hr {
     max-width: 373px;
     margin: 14px auto;
     line-height: 1.7; }
+    @media (max-width: 565px) {
+      .home-ourTech p {
+        max-width: 263px; } }
   .home-ourTech .btn {
     font-weight: 600;
     font-size: 0.8571rem;
@@ -223,15 +250,30 @@ hr {
     position: absolute;
     top: 400px;
     font-size: 1.5714rem; }
+    @media (min-width: 1300px) {
+      .home-ourTech .slidebtn {
+        top: 600px; } }
   .home-ourTech .slide-next {
     right: 60px; }
+    @media (max-width: 565px) {
+      .home-ourTech .slide-next {
+        right: 22px; } }
   .home-ourTech .slide-prev {
     left: 60px; }
+    @media (max-width: 565px) {
+      .home-ourTech .slide-prev {
+        left: 22px; } }
 
 .home-ourClients {
   text-align: center;
   padding-top: 0;
   padding-bottom: 80px; }
+  @media (max-width: 903px) {
+    .home-ourClients {
+      padding-top: 60px; } }
+  @media (max-width: 470px) {
+    .home-ourClients {
+      padding: 60px 40px; } }
   .home-ourClients h1 {
     color: #333D3E;
     font-weight: 400;
@@ -241,7 +283,8 @@ hr {
   .home-ourClients .clients-logos img {
     display: inline-block;
     width: 15%;
-    margin-right: 2%; }
+    margin-right: 2%;
+    min-width: 145px; }
   .home-ourClients .clients-sliderBtns {
     margin-bottom: 50px; }
     .home-ourClients .clients-sliderBtns a span {
@@ -520,6 +563,45 @@ body .home-whatdo .se-content--quienes-somos {
       text-decoration: none;
       color: black; }
 
+.product-list {
+  text-align: center; }
+  .product-list .container .row > div {
+    min-height: 266px; }
+    .product-list .container .row > div .img-container {
+      position: relative; }
+      .product-list .container .row > div .img-container img {
+        width: 100%;
+        max-width: 290px; }
+      .product-list .container .row > div .img-container .opacity-color {
+        position: absolute;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        height: 100%;
+        display: none; }
+      .product-list .container .row > div .img-container .product-more {
+        margin: 30% auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color: white;
+        font-weight: 300;
+        font-size: 5rem;
+        display: none;
+        text-decoration: none; }
+    .product-list .container .row > div h2 {
+      color: #263348;
+      font-weight: 600;
+      font-size: 0.9285rem;
+      margin: 10px 0 5px; }
+    .product-list .container .row > div h3 {
+      color: #768C8C;
+      font-weight: 600;
+      font-size: 0.9285rem;
+      margin: 5px 0 30px; }
+
 .productos-bckg {
   height: 597px;
   margin-top: -102px;
@@ -752,11 +834,14 @@ footer {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 15px 0;
     margin-top: 60px; }
-    @media (max-width: 700px) {
+    @media (max-width: 1006px) {
       footer .minifooter {
         text-align: center; } }
     footer .minifooter .container {
       vertical-align: middle; }
+      @media (max-width: 1006px) {
+        footer .minifooter .container {
+          padding: 0 !important; } }
       footer .minifooter .container span {
         color: white;
         font-size: 1rem;
@@ -765,19 +850,21 @@ footer {
       footer .minifooter .container ul {
         float: right;
         margin: 0; }
-        @media (max-width: 700px) {
+        @media (max-width: 1006px) {
           footer .minifooter .container ul {
             float: none;
             text-align: center;
-            margin: 5px 0 10px 0;
+            margin-bottom: 10px;
             padding: 0; } }
+        @media (max-width: 486px) {
+          footer .minifooter .container ul {
+            display: none; } }
         footer .minifooter .container ul li {
           display: inline-block;
           margin-right: 25px; }
-          @media (max-width: 500px) {
+          @media (max-width: 1006px) {
             footer .minifooter .container ul li {
-              margin-right: 15px;
-              margin-bottom: 5px; } }
+              line-height: 1.7; } }
           footer .minifooter .container ul li a {
             color: white;
             font-size: 1rem;

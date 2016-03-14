@@ -9,8 +9,15 @@ hr {
 	height: 597px;
 	margin-top: -102px;
 	padding-top: 200px;
+	@media(max-width: 730px) {
+		background: url('../img/bckg/home_bckg1_movil.jpg') no-repeat;
+		background-size: cover;
+	}
 	.home-bckg-slider {
 		margin-left: 10%;
+		@media(max-width: 950px) {
+			margin-left: 17%;
+		}
 		h2 {
 			font-weight: 700;
 			font-size: 1.5714rem;
@@ -20,6 +27,9 @@ hr {
 			font-size: 1.1428rem;
 			color: white;
 			max-width: 326px;
+			@media(max-width: 442px) {
+			    max-width: 303px;
+			}
 		}
 	}
 	>a {
@@ -29,13 +39,22 @@ hr {
 	}
 	.slide-next {
 			right: 60px;
+			@media(max-width: 633px) {
+				right: 30px;
+			}
 		}
 	.slide-prev {
 		left: 60px;
+		@media(max-width: 633px) {
+			left: 30px;
+		}
 	}
 }
 .bar-home {
 	padding-top: 100px !important;
+	@media(min-width: 1300px) {
+		height: 589px !important;
+	}
 	h2 {
 		font-weight: 700;
 		font-size: 1.5714rem;
@@ -101,6 +120,7 @@ hr {
 					font-weight: 600;
 					font-size: 0.8571rem;
 					background-color: $light-green;
+					margin-bottom: 60px;
 					&:hover {
 						background-color: $light-green !important;
 						color: white;
@@ -125,12 +145,16 @@ hr {
 	}
 }
 .home-ourTech {
-	background: url('../img/bckg/home_tecno_bckg1.png') no-repeat;
+	background: url('../img/bckg/home_tecno_bckg1bettter.png') no-repeat;
 	background-size: cover;
 	text-align: center;
 	height: 860px;
 	padding-top: 280px;
 	position: relative;
+	@media(min-width: 1300px) {
+		height: 1070px;
+		padding-top: 480px;
+	}
 	h2 {
 		font-size: 1.5714rem;
 		font-weight: 600;
@@ -150,6 +174,9 @@ hr {
 		max-width: 373px;
 		margin: 14px auto;
 		line-height: 1.7;
+		@media(max-width: 565px) {
+		    max-width: 263px;
+		}
 	}
 	.btn {
 		font-weight: 600;
@@ -164,18 +191,33 @@ hr {
 		position: absolute;
 		top: 400px;
 		font-size: 1.5714rem;
+		@media(min-width: 1300px) {
+			top: 600px;
+		}
 	}
 	.slide-next {
-			right: 60px;
+		right: 60px;
+		@media(max-width: 565px) {
+			right: 22px;
 		}
+	}
 	.slide-prev {
 		left: 60px;
+		@media(max-width: 565px) {
+			left: 22px;
+		}
 	}
 }
 .home-ourClients {
 	text-align: center;
 	padding-top: 0;
 	padding-bottom: 80px;
+	@media(max-width: 903px) {
+		padding-top: 60px;
+	}
+	@media(max-width: 470px) {
+		padding: 60px 40px;
+	}
 	h1 {
 		color: #333D3E;
 		font-weight: 400;
@@ -189,6 +231,7 @@ hr {
 			display: inline-block;
 			width: 15%;
 			margin-right: 2%;
+			min-width: 145px;
 		}
 	}
 	.clients-sliderBtns {
