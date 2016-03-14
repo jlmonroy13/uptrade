@@ -12,10 +12,10 @@ a {
   font-weight: 500;
   outline: none; }
   a:hover {
-    background-color: transparent !important;
+    background-color: transparent;
     outline: none; }
   a:focus {
-    background-color: transparent !important;
+    background-color: transparent;
     outline: none; }
   a:active {
     outline: none; }
@@ -43,57 +43,94 @@ button {
 li {
   list-style: none; }
 
-header {
-  height: 102px; }
-  header .navbar-collap {
-    background-color: rgba(0, 0, 0, 0.5); }
-  header .navbar {
-    margin-bottom: 0;
-    min-height: 102px;
-    z-index: 1;
-    position: absolute;
-    width: 100%; }
-    @media (min-width: 1065px) and (max-width: 1184px) {
-      header .navbar .container .navbar-header .navbar-brand {
-        margin-left: -65px !important; } }
-    header .navbar .container .navbar-header .navbar-brand img {
-      width: 120%; }
-    header .navbar .container .navbar-header .navbar-toggle span {
-      border: 1px solid white; }
-    header .navbar .container .collapse {
-      border: none !important; }
-      header .navbar .container .collapse ul.nav {
-        margin-top: 20px; }
-        @media (max-width: 1065px) {
-          header .navbar .container .collapse ul.nav {
-            text-align: right; } }
-        header .navbar .container .collapse ul.nav li > a {
-          color: white;
-          font-family: 'Open Sans', sans-serif;
-          font-size: 0.9285em;
-          font-weight: 500; }
-          header .navbar .container .collapse ul.nav li > a:hover {
-            background-color: transparent;
-            color: #95D700; }
-          header .navbar .container .collapse ul.nav li > a:focus {
-            background-color: transparent;
-            color: #95D700;
-            border: none; }
-        header .navbar .container .collapse ul.nav li:last-child {
-          margin-top: 5px;
-          margin-left: 20px; }
-          header .navbar .container .collapse ul.nav li:last-child button {
-            background-color: transparent;
-            border: none; }
-            header .navbar .container .collapse ul.nav li:last-child button a {
-              background-color: #95D700; }
-              @media (max-width: 1065px) {
-                header .navbar .container .collapse ul.nav li:last-child button a {
-                  float: right;
-                  margin-right: 10px; } }
-              header .navbar .container .collapse ul.nav li:last-child button a:hover {
-                background-color: #95D700 !important;
-                color: white; }
+.navbar__title {
+  float: left; }
+
+.nav-list {
+  margin-top: 3.3rem;
+  float: right;
+  transition: right 0.2s ease; }
+  @media (max-width: 1199px) {
+    .nav-list {
+      position: fixed;
+      width: 280px;
+      right: -280px;
+      top: 0;
+      margin: 0;
+      bottom: 0;
+      background-color: rgba(25, 29, 30, 0.85);
+      text-align: left;
+      padding-top: 4.4rem;
+      padding-left: 0;
+      z-index: 99;
+      text-align: center; } }
+  .nav-list--expanded {
+    right: 0; }
+  .nav-list__item {
+    display: inline-block;
+    margin-right: 30px; }
+    @media (max-width: 1199px) {
+      .nav-list__item {
+        display: block;
+        padding: 1.5rem 0;
+        border-bottom: 1px solid #81A6A3;
+        margin-right: 0; } }
+    @media (max-width: 1199px) {
+      .nav-list__item--button {
+        position: relative;
+        top: -435px;
+        padding-top: 5px;
+        padding-bottom: 11px; } }
+  .nav-list__link:hover {
+    color: #93D900;
+    text-decoration: none; }
+  .nav-list__link:focus {
+    color: #93D900;
+    text-decoration: none; }
+
+.button-primary {
+  display: block;
+  padding: 0.8em 2em;
+  background-color: #93D900;
+  border-radius: 5px; }
+  .button-primary--login {
+    background-color: #93D900; }
+    @media (max-width: 1199px) {
+      .button-primary--login {
+        padding: 0.8em 4.3em; } }
+    .button-primary--login:hover {
+      text-decoration: none;
+      background-color: #93D900;
+      color: white; }
+    .button-primary--login:focus {
+      text-decoration: none;
+      background-color: #93D900;
+      color: white; }
+
+.bars {
+  float: right;
+  margin-top: 3.3rem;
+  display: none; }
+  @media (max-width: 1199px) {
+    .bars {
+      display: initial; } }
+  .bars__icon {
+    display: block;
+    margin-bottom: 7px;
+    width: 40px;
+    border-bottom: 2px solid white;
+    border-radius: 1px; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 98;
+  display: none; }
+  .overlay--visible {
+    display: initial; }
 
 /* home styles */
 hr {

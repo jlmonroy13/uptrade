@@ -10,5 +10,16 @@ $(function(){
 		$(this).children('.opacity-color').hide();
 		$(this).children('.product-more').hide();
 	});
+
+	$('.js-expand-nav').click(function(event){
+		$('.js-nav-expanded').addClass('nav-list--expanded');
+		$('.js-retract-nav').addClass('overlay--visible');
+		event.preventDefault();
+	}) 
+	$('.js-retract-nav').click(function(){
+		$('.js-nav-expanded').removeClass('nav-list--expanded');
+		$('.js-retract-nav').removeClass('overlay--visible');
+	})
+
 });
 	
