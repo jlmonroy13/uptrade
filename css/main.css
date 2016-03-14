@@ -47,7 +47,7 @@ li {
   float: left; }
 
 .nav-list {
-  margin-top: 3.3rem;
+  margin-top: 2.7rem;
   float: right;
   transition: right 0.2s ease; }
   @media (max-width: 1199px) {
