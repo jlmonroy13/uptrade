@@ -19,31 +19,26 @@
 <body>
   <!--========= HEADER ===============-->
   <header>
-    <nav class="navbar" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html" title="UpTrade">
-            <img src="img/icn/logo.png">
-            </a>
-          </div>
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav navbar-right">                
-            <li><a class="work" href="index.html">HOME</a></li>
-            <li><a class="about_us" href="quienes-somos.html">QUIÉNES SOMOS</a></li>
-            <li><a class="contact" href="nuestra-tecnologia.html">NUESTRA TECNOLOGÍA</a></li>
-            <li><a class="work" href="productos.html">PRODUCTOS</a></li>
-            <li><a class="about_us" href="contacto.html">CONTACTO</a></li>
-            <li><a class="contact" href="trabaja-con-nosotros.html">TRABAJA CON NOSOTROS</a></li>
-            <li><button><a class="btn" href="#">LOGIN</a></button></li>         
-            </ul>
-          </div>
-        </div>
-    </nav>
+    <div class="container">
+      <nav role="navigation">
+        <h1 class="navbar__title"><a href="index.html"><img class="navbar__logo" src="img/icn/logo.png" alt=""></a></h1>
+        <a href="#" class="bars js-expand-nav">
+          <span class="bars__icon"></span>
+          <span class="bars__icon"></span>
+          <span class="bars__icon"></span>
+        </a>
+        <div class="overlay js-retract-nav"></div>
+        <ul class="nav-list js-nav-expanded">
+          <li class="nav-list__item"><a class="nav-list__link" href="index.html">HOME</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="nuestra-tecnologia.html">NUESTRA TECNOLOGÍA</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="productos.html">PRODUCTOS</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="contacto.html">CONTACTO</a></li>
+          <li class="nav-list__item"><a class="nav-list__link" href="trabaja-con-nosotros.html">TRABAJA CON NOSOTROS</a></li>
+          <li class="nav-list__item nav-list__item--button"><button><a class="button-primary button-primary--login" href="#">LOGIN</a></button></li> 
+        </ul>
+      </nav>
+    </div>
   </header>
   <div class="productos-bckg productos-bckg--plano">
     <h2 class="productos-bckg__title">Exhibiciones Acuerdos Comerciales</h2>
