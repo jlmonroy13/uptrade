@@ -1,76 +1,106 @@
-// Header Styles
-header {
-	height: 102px;
-	.navbar-collap {
-		background-color: rgba(0,0,0,0.5);
-	}
-	.navbar {
-		margin-bottom: 0;
-		min-height: 102px;
-		z-index: 1;
-		position: absolute;
-		width: 100%;
-		.container {
-			.navbar-header {
-				.navbar-brand {
-					@media (min-width: 1065px) and (max-width: 1184px) {
-						margin-left: -65px !important;
-					}
-					img {
-						width: 120%;
-					}
-				}
-				.navbar-toggle {
-					span {
-						border: 1px solid white;
-					}
-				}
-			}
-			.collapse {
-				border: none !important;
-				ul.nav {
-					margin-top: 20px;
-					@media (max-width: 1065px){
-						text-align: right;
-					}
-					li {
-						>a {
-							color: white;
-							font-family: 'Open Sans', sans-serif;
-							font-size: 0.9285em; 
-							font-weight: 500;
-							&:hover {
-								background-color: transparent;
-								color: $light-green;
-							}
-							&:focus {
-								background-color: transparent;
-								color: $light-green;
-								border: none;
-							}
-						}
-						&:last-child {
-							margin-top: 5px;
-							margin-left: 20px;
-							button {
-								background-color: transparent;
-								border: none;
-								a {
-									background-color: $light-green;
-									@media (max-width: 1065px){
-	    								float: right;
-	    								margin-right: 10px;
-	    							}
-	    							&:hover {
-										background-color: $light-green !important;
-										color: white;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}	
-	}
+.navbar__title {
+  float: left;
+}
+.nav-list {
+  margin-top: 3.3rem;
+  float: right;
+  transition: right 0.2s ease;
+  @media (max-width: 1199px) {
+    //display: none;
+    position: fixed;
+    width: 280px;
+    right: -280px;
+    top: 0;
+    margin: 0;
+    bottom: 0;
+    background-color: rgba(25, 29, 30, 0.85);
+    text-align: left;
+    padding-top: 4.4rem;
+    padding-left: 0;
+    z-index: 99;
+    text-align: center;
+  }
+  &--expanded{
+    right: 0;
+  }
+  &__item {
+    display: inline-block;
+    margin-right: 30px;
+    @media (max-width: 1199px) {
+      display: block;
+      padding: 1.5rem 0;
+      border-bottom: 1px solid #81A6A3;
+      margin-right: 0;
+    }
+    &--button {
+      @media (max-width: 1199px) {
+        position: relative;
+        top: -435px; 
+        padding-top: 5px;
+        padding-bottom: 11px;
+      }
+    }
+  }
+  &__link {
+    &:hover {
+      color: #93D900;
+      text-decoration: none;
+    }
+    &:focus {
+      color: #93D900;
+      text-decoration: none;
+    }
+  }
+}
+
+.button-primary {
+  display: block;
+  padding: 0.8em 2em;
+  background-color: #93D900;
+  border-radius: 5px; 
+  &--login {
+    background-color: #93D900;
+    @media (max-width: 1199px) {
+      padding: 0.8em 4.3em
+    }
+    &:hover {
+      text-decoration: none;
+      background-color: #93D900;
+      color: white;
+    }
+    &:focus {
+      text-decoration: none;
+      background-color: #93D900;
+      color: white;
+    }
+  }
+}
+
+.bars {
+  float: right;
+  margin-top: 3.3rem;
+  display: none;
+  @media (max-width: 1199px) {
+    display: initial;
+  }
+  &__icon {
+    display: block;
+    margin-bottom: 7px;
+    width: 40px;
+    border-bottom: 2px solid white;
+    border-radius: 1px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 98;
+  display: none;
+  &--visible {
+    display: initial;
+  }
 }
