@@ -1,5 +1,5 @@
 .productos-bckg {
-  height: 597px;
+  height: 597px; 
   margin-top: -102px;
   text-align: center;
   padding-top: 230px;
@@ -15,6 +15,10 @@
     background: url("../img/bckg/producto-bckg-facing.jpg");  
     background-size: cover;
   }
+  &--exhibi{
+    background: url("../img/bckg/producto-bckg-exhibi.jpg");  
+    background-size: cover;
+  }
   &--plano {
     background: url("../img/bckg/producto-bckg-plano.jpg");  
     background-size: cover;
@@ -23,6 +27,11 @@
     font-size: 1.5714rem;
     font-weight: 600;
     color: white;
+    &--exhibi {
+      max-width: 236px;
+      margin: 18.2px auto;
+      line-height: 1.4;
+    }
   }
   &__legend {
     font-size:  1.2rem;
@@ -51,6 +60,9 @@
     line-height: 2;
     &--plano {
         max-width: 575px !important;
+    }
+    &--exhibi {
+        max-width: 563px;
     }
   }
 }
@@ -159,6 +171,21 @@
     }
     &--plano3 {
       background: url('../img/icn/producto-plano-sprites.png') no-repeat -2px -45px;
+      width: 21px;
+      height: 21px;
+    }
+    &--exhibi1 {
+      background: url('../img/icn/producto-exhibi-sprites.png') no-repeat 0 0;
+      width: 19px;
+      height: 19px;
+    }
+    &--exhibi2 {
+      background: url('../img/icn/producto-exhibi-sprites.png') no-repeat 0 -25px;
+      width: 23px;
+      height: 26px;
+    }
+    &--exhibi3 {
+      background: url('../img/icn/producto-exhibi-sprites.png') no-repeat 0 -58px;
       width: 21px;
       height: 21px;
     }

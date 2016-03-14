@@ -116,8 +116,8 @@ li {
       display: initial; } }
   .bars__icon {
     display: block;
-    margin-bottom: 7px;
-    width: 40px;
+    margin-bottom: 5px;
+    width: 30px;
     border-bottom: 2px solid white;
     border-radius: 1px; }
 
@@ -672,6 +672,9 @@ body .home-whatdo .se-content--quienes-somos {
   .productos-bckg--facing {
     background: url("../img/bckg/producto-bckg-facing.jpg");
     background-size: cover; }
+  .productos-bckg--exhibi {
+    background: url("../img/bckg/producto-bckg-exhibi.jpg");
+    background-size: cover; }
   .productos-bckg--plano {
     background: url("../img/bckg/producto-bckg-plano.jpg");
     background-size: cover; }
@@ -679,6 +682,10 @@ body .home-whatdo .se-content--quienes-somos {
     font-size: 1.5714rem;
     font-weight: 600;
     color: white; }
+    .productos-bckg__title--exhibi {
+      max-width: 236px;
+      margin: 18.2px auto;
+      line-height: 1.4; }
   .productos-bckg__legend {
     font-size: 1.2rem;
     color: #DDDDDD;
@@ -704,6 +711,8 @@ body .home-whatdo .se-content--quienes-somos {
     line-height: 2; }
     .bar__legend--plano {
       max-width: 575px !important; }
+    .bar__legend--exhibi {
+      max-width: 563px; }
 
 .advantages {
   padding: 3rem 0; }
@@ -791,6 +800,18 @@ body .home-whatdo .se-content--quienes-somos {
       height: 20px; }
     .advantages__icon--plano3 {
       background: url("../img/icn/producto-plano-sprites.png") no-repeat -2px -45px;
+      width: 21px;
+      height: 21px; }
+    .advantages__icon--exhibi1 {
+      background: url("../img/icn/producto-exhibi-sprites.png") no-repeat 0 0;
+      width: 19px;
+      height: 19px; }
+    .advantages__icon--exhibi2 {
+      background: url("../img/icn/producto-exhibi-sprites.png") no-repeat 0 -25px;
+      width: 23px;
+      height: 26px; }
+    .advantages__icon--exhibi3 {
+      background: url("../img/icn/producto-exhibi-sprites.png") no-repeat 0 -58px;
       width: 21px;
       height: 21px; }
 
