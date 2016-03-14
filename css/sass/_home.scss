@@ -71,7 +71,7 @@ hr {
 		font-size: 0.8571rem;
 		font-weight: 600;
 		&:hover {
-			background-color: #343D3E !important;
+			background-color: #242B2C !important;
 			color: white !important;
 		}
 	}
@@ -121,9 +121,11 @@ hr {
 					font-size: 0.8571rem;
 					background-color: $light-green;
 					margin-bottom: 60px;
+					border: 2px solid $light-green;
 					&:hover {
-						background-color: $light-green !important;
-						color: white;
+						background-color: white !important;
+						color: $light-green;
+						border: 2px solid $light-green;
 					}
 				}
 				&:nth-child(2) {
@@ -183,7 +185,7 @@ hr {
 		font-size: 0.8571rem;
 		background-color: $light-green;
 		&:hover {
-			background-color: $light-green !important;
+			background-color: #75AA00 !important;
 			color: white;
 		}
 	}
@@ -264,9 +266,11 @@ hr {
 		font-size: 1.2857rem;
 		background-color: $light-green;
 		margin-left: 15px;
+		border: 2px solid $light-green;
 		&:hover {
-			background-color: $light-green !important;
-			color: white;
+			background-color: white !important;
+			color: $light-green;
+			border: 2px solid $light-green;
 		}
 	}
 }

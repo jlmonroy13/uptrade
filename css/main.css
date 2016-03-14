@@ -160,7 +160,7 @@ hr {
     font-size: 0.8571rem;
     font-weight: 600; }
     .bar-home > a:hover {
-      background-color: #343D3E !important;
+      background-color: #242B2C !important;
       color: white !important; }
 
 .home-whatdo {
@@ -198,10 +198,12 @@ hr {
     font-weight: 600;
     font-size: 0.8571rem;
     background-color: #95D700;
-    margin-bottom: 60px; }
+    margin-bottom: 60px;
+    border: 2px solid #95D700; }
     .home-whatdo .container .row > div > a:hover {
-      background-color: #95D700 !important;
-      color: white; }
+      background-color: white !important;
+      color: #95D700;
+      border: 2px solid #95D700; }
   .home-whatdo .container .row > div:nth-child(2) img {
     margin-bottom: 55px; }
   .home-whatdo .container .row > div:nth-child(2) p {
@@ -244,7 +246,7 @@ hr {
     font-size: 0.8571rem;
     background-color: #95D700; }
     .home-ourTech .btn:hover {
-      background-color: #95D700 !important;
+      background-color: #75AA00 !important;
       color: white; }
   .home-ourTech .slidebtn {
     position: absolute;
@@ -306,10 +308,12 @@ hr {
     font-weight: 600;
     font-size: 1.2857rem;
     background-color: #95D700;
-    margin-left: 15px; }
+    margin-left: 15px;
+    border: 2px solid #95D700; }
     .home-ourClients .btn:hover {
-      background-color: #95D700 !important;
-      color: white; }
+      background-color: white !important;
+      color: #95D700;
+      border: 2px solid #95D700; }
 
 .description {
   text-align: center;
@@ -334,8 +338,14 @@ hr {
     margin: 0.8rem 0; }
     .team__person--first-one {
       margin-left: 12.5%; }
+      @media (max-width: 969px) {
+        .team__person--first-one {
+          margin-left: 0; } }
     .team__person--first-two {
       margin-left: 25%; }
+      @media (max-width: 969px) {
+        .team__person--first-two {
+          margin-left: 0; } }
     .team__person__photo {
       border: 2px solid #7EA09F;
       border-radius: 50%;
@@ -363,6 +373,9 @@ body .home-whatdo .se-content--quienes-somos {
 .how-do {
   text-align: center;
   padding: 2.9rem 0; }
+  @media (max-width: 969px) {
+    .how-do {
+      padding: 2.9rem 15px; } }
   .how-do__title {
     color: #333D3E;
     font-size: 1.5714rem;
@@ -386,8 +399,14 @@ body .home-whatdo .se-content--quienes-somos {
     text-align: left;
     max-width: 390px;
     font-weight: 600; }
+    @media (max-width: 969px) {
+      .how-do__description {
+        margin: 10px auto; } }
   .how-do__first-description {
     margin-left: 8.33%; }
+    @media (max-width: 969px) {
+      .how-do__first-description {
+        margin: 10px auto; } }
 
 #our-technology .our-technology-main {
   background: url("../img/bckg/nuestra-tecnologia_bckg.jpg") no-repeat;
@@ -613,6 +632,12 @@ body .home-whatdo .se-content--quienes-somos {
   .productos-bckg--precios {
     background: url("../img/bckg/producto-bckg-precios.jpg");
     background-size: cover; }
+  .productos-bckg--facing {
+    background: url("../img/bckg/producto-bckg-facing.jpg");
+    background-size: cover; }
+  .productos-bckg--plano {
+    background: url("../img/bckg/producto-bckg-plano.jpg");
+    background-size: cover; }
   .productos-bckg__title {
     font-size: 1.5714rem;
     font-weight: 600;
@@ -640,6 +665,8 @@ body .home-whatdo .se-content--quienes-somos {
     color: white;
     max-width: 755px;
     line-height: 2; }
+    .bar__legend--plano {
+      max-width: 575px !important; }
 
 .advantages {
   padding: 3rem 0; }
@@ -666,6 +693,8 @@ body .home-whatdo .se-content--quienes-somos {
     margin-top: 5.7rem; }
   .advantages__image {
     width: 60%; }
+    .advantages__image--plano {
+      width: 100%; }
   .advantages__icon {
     display: inline-block;
     margin-right: 10px;
@@ -703,6 +732,30 @@ body .home-whatdo .se-content--quienes-somos {
       background: url("../img/icn/producto-precios-sprites.png") no-repeat -6px -92px;
       width: 21px;
       height: 21px; }
+    .advantages__icon--facing1 {
+      background: url("../img/icn/producto-facing-sprites.png") no-repeat -2px 0;
+      width: 22px;
+      height: 18px; }
+    .advantages__icon--facing2 {
+      background: url("../img/icn/producto-facing-sprites.png") no-repeat 0 -24px;
+      width: 26px;
+      height: 16px; }
+    .advantages__icon--facing3 {
+      background: url("../img/icn/producto-facing-sprites.png") no-repeat -2px -50px;
+      width: 22px;
+      height: 21px; }
+    .advantages__icon--plano1 {
+      background: url("../img/icn/producto-plano-sprites.png") no-repeat 0 0;
+      width: 26px;
+      height: 16px; }
+    .advantages__icon--plano2 {
+      background: url("../img/icn/producto-plano-sprites.png") no-repeat -2px -21px;
+      width: 19px;
+      height: 20px; }
+    .advantages__icon--plano3 {
+      background: url("../img/icn/producto-plano-sprites.png") no-repeat -2px -45px;
+      width: 21px;
+      height: 21px; }
 
 .productos-relacionados {
   padding: 3rem 0; }
@@ -729,7 +782,7 @@ body .home-whatdo .se-content--quienes-somos {
     text-align: center; }
 
 .map {
-  background: url("../img/bckg/contacto_bckg_map.jpg");
+  background: url("../img/bckg/contacto_bg.png");
   background-size: cover;
   height: 597px;
   margin-top: -102px; }

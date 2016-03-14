@@ -11,6 +11,14 @@
     background: url("../img/bckg/producto-bckg-precios.jpg");  
     background-size: cover;
   }
+  &--facing {
+    background: url("../img/bckg/producto-bckg-facing.jpg");  
+    background-size: cover;
+  }
+  &--plano {
+    background: url("../img/bckg/producto-bckg-plano.jpg");  
+    background-size: cover;
+  }
   &__title {
     font-size: 1.5714rem;
     font-weight: 600;
@@ -41,6 +49,9 @@
     color: white;
     max-width: 755px;
     line-height: 2;
+    &--plano {
+        max-width: 575px !important;
+    }
   }
 }
 .advantages {
@@ -72,6 +83,9 @@
   }
   &__image {
     width:  60%;
+    &--plano {
+      width: 100%;
+    }
   }
   &__icon {
     display: inline-block; 
@@ -115,6 +129,36 @@
     }
     &--conocer-historia {
       background: url('../img/icn/producto-precios-sprites.png') no-repeat -6px -92px;
+      width: 21px;
+      height: 21px;
+    }
+    &--facing1 {
+      background: url('../img/icn/producto-facing-sprites.png') no-repeat -2px 0;
+      width: 22px;
+      height: 18px;
+    }
+    &--facing2 {
+      background: url('../img/icn/producto-facing-sprites.png') no-repeat 0 -24px;
+      width: 26px;
+      height: 16px;
+    }
+    &--facing3 {
+      background: url('../img/icn/producto-facing-sprites.png') no-repeat -2px -50px;
+      width: 22px;
+      height: 21px;
+    }
+    &--plano1 {
+      background: url('../img/icn/producto-plano-sprites.png') no-repeat 0 0;
+      width: 26px;
+      height: 16px;
+    }
+    &--plano2 {
+      background: url('../img/icn/producto-plano-sprites.png') no-repeat -2px -21px;
+      width: 19px;
+      height: 20px;
+    }
+    &--plano3 {
+      background: url('../img/icn/producto-plano-sprites.png') no-repeat -2px -45px;
       width: 21px;
       height: 21px;
     }
