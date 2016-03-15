@@ -16,7 +16,7 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
 </head>
-<body>
+<body class="home">
   <!--========= HEADER ===============-->
   <header>
     <div class="container">
@@ -29,7 +29,7 @@
         </a>
         <div class="overlay js-retract-nav"></div>
         <ul class="nav-list js-nav-expanded">
-          <li class="nav-list__item"><a class="nav-list__link" href="index.html">HOME</a></li>
+          <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="index.html">HOME</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="quienes-somos.html">QUIÉNES SOMOS</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="nuestra-tecnologia.html">NUESTRA TECNOLOGÍA</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="productos.html">PRODUCTOS</a></li>
@@ -43,13 +43,19 @@
 	<!-- FIRST SECTION (SLIDER) -->
 	<div class="home-slider">
 		<img src="img/bckg/home_bckg_final.jpg" alt="" class="img-slider img-slider-visible">
-		<img src="img/bckg/home_bckg_final2.jpg" alt="" class="img-slider ">
+		<img src="img/bckg/home_bckg_final2.jpg" alt="" class="img-slider">
 		<img src="img/bckg/home_bckg_final3.jpg" alt="" class="img-slider">
-		<div class="home-bckg-slider">
-			<h2 class="">SEGURIDAD</h2>
-			<h2 class="">CALIDAD</h2>
-			<h2 class="">PUNTUALIDAD</h2>
+		<div class="home-bckg-slider home-bckg-slider-visible">
+			<h2>SEGURIDAD</h2>
 			<p>Contamos con los mas altos estandares de seguridad y encriptacion de datos.</p>
+		</div>
+		<div class="home-bckg-slider">
+			<h2>CALIDAD</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, tempore.</p>
+		</div>
+		<div class="home-bckg-slider">
+			<h2>INTEGRIDAD</h2>
+			<p>Si de integridad se habla, en nosotros puede contar con la máxima capacidad para producir.</p>
 		</div>
 		<a href="#" id="nexthome1" class="slide-next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 		<a href="#" id="prevhome1" class="slide-prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
@@ -72,32 +78,41 @@
 					<img src="img/icn/home-upos-logo.png" alt="">
 					<h4>LEVANTAMIENTO DE DATOS</h4>
 					<p>Realizamos levantamiento de datos y servicios de medición de los elementos que tu requieras y que estén exhibidos a público en general.</p>
-					<a href="" class="btn">VER MÁS</a>
+					<a href="quienes-somos.html" class="btn">VER MÁS</a>
 				</div>
 				<div class="col-md-4">
 					<img class="rds" src="img/icn/home-rds-logo.png" alt="">
 					<h4>PROCESAMIENTO DE INFORMACIÓN</h4>
 					<p>Contamos con una plataforma web que procesa, analiza y genera indicadores para ser gestionados por el cliente.</p>
-					<a href="" class="btn">VER MÁS</a>
+					<a href="quienes-somos.html" class="btn">VER MÁS</a>
 				</div>
 				<div class="col-md-4">
 					<img class="tableau" src="img/icn/home-tableau-logo.png" alt="">
 					<h4>VISUALIZACIÓN DE REPORTES</h4>
 					<p>Realizamos levantamiento de datos y servicios de medición de los elementos que tu requieras y que estén exhibidos a público en general.</p>
-					<a href="" class="btn">VER MÁS</a>
+					<a href="quienes-somos.html" class="btn">VER MÁS</a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- NUESTRA TECNOLOGIA -->
 	<div class="home-ourTech">
-		<h2>UPOS APP</h2>
-		<h3>Nuestra Tecnolgía</h3>
-		<hr>
-		<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de teLorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-		<a href="" class="btn">VER MÁS</a>
-		<a href="#" class="slidebtn slide-next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-		<a href="#" class="slidebtn slide-prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<div  data-index="1" class="ourTech-slider ourTech-slider-visible">
+			<h2>UPOS APP</h2>
+			<h3>Nuestra Tecnolgía</h3>
+			<hr>
+			<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de teLorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+			<a href="nuestra-tecnologia.html" class="btn">VER MÁS</a>
+		</div>
+		<div data-index="2" class="ourTech-slider">
+			<h2>PRECIOS</h2>
+			<h3>Productos Cuantitativos</h3>
+			<hr>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis fugiat nostrum nobis ducimus tempora, perferendis doloribus quae reiciendis, laboriosam explicabo, iusto consequatur ex</p>
+			<a href="productos-precios.html" class="btn">VER MÁS</a>
+		</div>
+		<a href="javascript:void(0)" id="technext" class="slidebtn slide-next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+		<a href="javascript:void(0)" id="techprev" class="slidebtn slide-prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 	</div>
 	<!-- ALGUNOS DE NUESTROS CLIENTES -->
 	<div class="home-ourClients">

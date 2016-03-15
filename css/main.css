@@ -101,6 +101,8 @@ header {
   .nav-list__link:focus {
     color: #93D900;
     text-decoration: none; }
+  .nav-list__link--active {
+    color: #93D900; }
 
 .button-primary {
   display: block;
@@ -114,11 +116,11 @@ header {
         padding: 0.8em 4.3em; } }
     .button-primary--login:hover {
       text-decoration: none;
-      background-color: #93D900;
+      background-color: #75AA00;
       color: white; }
     .button-primary--login:focus {
       text-decoration: none;
-      background-color: #93D900;
+      background-color: #75AA00;
       color: white; }
 
 .bars {
@@ -160,8 +162,8 @@ hr {
     top: 0;
     height: 573px;
     z-index: 0;
-    margin-bottom: -65px;
-    display: none; }
+    display: none;
+    margin-bottom: -65px; }
   .home-slider img.img-slider-visible {
     width: 100%;
     position: absolute;
@@ -173,6 +175,7 @@ hr {
   .home-slider .home-bckg-slider {
     position: absolute;
     top: 200px;
+    display: none;
     margin-left: 10%; }
     @media (max-width: 950px) {
       .home-slider .home-bckg-slider {
@@ -188,10 +191,36 @@ hr {
       @media (max-width: 442px) {
         .home-slider .home-bckg-slider p {
           max-width: 303px; } }
+  .home-slider .home-bckg-slider-visible {
+    position: absolute;
+    top: 200px;
+    margin-left: 10%;
+    display: block; }
+    @media (max-width: 950px) {
+      .home-slider .home-bckg-slider-visible {
+        margin-left: 17%; } }
+    .home-slider .home-bckg-slider-visible h2 {
+      font-weight: 700;
+      font-size: 1.5714rem; }
+    .home-slider .home-bckg-slider-visible p {
+      font-weight: 600;
+      font-size: 1.1428rem;
+      color: white;
+      max-width: 326px; }
+      @media (max-width: 442px) {
+        .home-slider .home-bckg-slider-visible p {
+          max-width: 303px; } }
   .home-slider > a {
     position: absolute;
     top: 240px;
     font-size: 1.5714rem; }
+    .home-slider > a:hover {
+      color: #95D700;
+      font-size: 1.7857rem; }
+    .home-slider > a:active {
+      color: white; }
+    .home-slider > a:focus {
+      color: white; }
   .home-slider .slide-next {
     right: 60px; }
     @media (max-width: 633px) {
@@ -275,7 +304,7 @@ hr {
     margin-bottom: 43px; }
 
 .home-ourTech {
-  background: url("../img/bckg/home_tecno_bckg1bettter2.png") no-repeat;
+  background: url("../img/bckg/home_tecno_bg1.png") no-repeat;
   background-size: cover;
   text-align: center;
   height: 860px;
@@ -285,32 +314,68 @@ hr {
     .home-ourTech {
       height: 1070px;
       padding-top: 480px; } }
-  .home-ourTech h2 {
-    font-size: 1.5714rem;
-    font-weight: 600; }
-  .home-ourTech h3 {
-    font-weight: 400;
-    font-size: 1.2857rem;
-    color: white; }
-  .home-ourTech hr {
-    width: 121px !important; }
-  .home-ourTech p {
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    max-width: 373px;
-    margin: 14px auto;
-    line-height: 1.7; }
-    @media (max-width: 565px) {
-      .home-ourTech p {
-        max-width: 263px; } }
-  .home-ourTech .btn {
-    font-weight: 600;
-    font-size: 0.8571rem;
-    background-color: #95D700; }
-    .home-ourTech .btn:hover {
-      background-color: #75AA00 !important;
+  .home-ourTech .ourTech-slider {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0; }
+    .home-ourTech .ourTech-slider h2 {
+      font-size: 1.5714rem;
+      font-weight: 600; }
+    .home-ourTech .ourTech-slider h3 {
+      font-weight: 400;
+      font-size: 1.2857rem;
       color: white; }
+    .home-ourTech .ourTech-slider hr {
+      width: 121px !important; }
+    .home-ourTech .ourTech-slider p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      max-width: 373px;
+      margin: 14px auto;
+      line-height: 1.7; }
+      @media (max-width: 565px) {
+        .home-ourTech .ourTech-slider p {
+          max-width: 263px; } }
+    .home-ourTech .ourTech-slider .btn {
+      font-weight: 600;
+      font-size: 0.8571rem;
+      background-color: #95D700; }
+      .home-ourTech .ourTech-slider .btn:hover {
+        background-color: #75AA00 !important;
+        color: white; }
+  .home-ourTech .ourTech-slider-visible {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0; }
+    .home-ourTech .ourTech-slider-visible h2 {
+      font-size: 1.5714rem;
+      font-weight: 600; }
+    .home-ourTech .ourTech-slider-visible h3 {
+      font-weight: 400;
+      font-size: 1.2857rem;
+      color: white; }
+    .home-ourTech .ourTech-slider-visible hr {
+      width: 121px !important; }
+    .home-ourTech .ourTech-slider-visible p {
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+      max-width: 373px;
+      margin: 14px auto;
+      line-height: 1.7; }
+      @media (max-width: 565px) {
+        .home-ourTech .ourTech-slider-visible p {
+          max-width: 263px; } }
+    .home-ourTech .ourTech-slider-visible .btn {
+      font-weight: 600;
+      font-size: 0.8571rem;
+      background-color: #95D700; }
+      .home-ourTech .ourTech-slider-visible .btn:hover {
+        background-color: #75AA00 !important;
+        color: white; }
   .home-ourTech .slidebtn {
     position: absolute;
     top: 400px;
@@ -318,6 +383,13 @@ hr {
     @media (min-width: 1300px) {
       .home-ourTech .slidebtn {
         top: 600px; } }
+    .home-ourTech .slidebtn:hover {
+      color: #95D700;
+      font-size: 1.7857rem; }
+    .home-ourTech .slidebtn:active {
+      color: white; }
+    .home-ourTech .slidebtn:focus {
+      color: white; }
   .home-ourTech .slide-next {
     right: 60px; }
     @media (max-width: 565px) {
@@ -683,6 +755,9 @@ body .home-whatdo .se-content--quienes-somos {
       font-size: 0.9285rem;
       margin: 5px 0 30px; }
 
+.bar__title--productos {
+  max-width: 380px; }
+
 .productos-bckg {
   height: 597px;
   text-align: center;
@@ -988,14 +1063,19 @@ body .home-whatdo .se-content--quienes-somos {
       height: 23px; }
 
 .productos-relacionados {
-  padding: 3rem 0; }
+  padding: 3rem 0;
+  text-align: center; }
   .productos-relacionados__title {
     font-size: 1.2rem;
     color: #253248;
-    margin-top: 0; }
+    margin-top: 0;
+    text-align: left; }
   .productos-relacionados__image {
     width: 90%;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    opacity: 0.8; }
+    .productos-relacionados__image:hover {
+      opacity: 1; }
   .productos-relacionados__image-title {
     font-size: 1rem;
     font-weight: 600;
@@ -1010,6 +1090,18 @@ body .home-whatdo .se-content--quienes-somos {
     margin-bottom: 5px; }
   .productos-relacionados__container {
     text-align: center; }
+  .productos-relacionados .btn {
+    font-weight: 600;
+    font-size: 0.8571rem;
+    background-color: #95D700;
+    margin-bottom: 60px;
+    border: 2px solid #95D700;
+    color: white;
+    margin: 10px 0; }
+    .productos-relacionados .btn:hover {
+      background-color: white !important;
+      color: #95D700;
+      border: 2px solid #95D700; }
 
 .map {
   background: url("../img/bckg/contacto_bg.jpg");
