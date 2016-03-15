@@ -731,6 +731,18 @@ body .home-whatdo .se-content--quienes-somos {
     height: 520px;
     margin-top: -165px;
     padding: 120px 10%; }
+    @media (max-width: 610px) {
+      .bar--mystery {
+        height: 650px; } }
+  @media (max-width: 750px) {
+    .bar--arbol {
+      height: 620px; } }
+  @media (max-width: 576px) {
+    .bar--arbol {
+      height: 680px; } }
+  @media (max-width: 806px) {
+    .bar--bsines {
+      height: 654px; } }
   .bar__title {
     color: white;
     font-size: 2.5rem; }
@@ -948,6 +960,14 @@ body .home-whatdo .se-content--quienes-somos {
       background: url("../img/icn/producto-b2b-sprites.png") no-repeat 0 -22px;
       width: 18px;
       height: 17px; }
+    .advantages__icon--self1 {
+      background: url("../img/icn/producto-self-sprites.png") no-repeat 0 0;
+      width: 28px;
+      height: 24px; }
+    .advantages__icon--self2 {
+      background: url("../img/icn/producto-self-sprites.png") no-repeat -2px -31px;
+      width: 23px;
+      height: 23px; }
 
 .productos-relacionados {
   padding: 3rem 0; }
