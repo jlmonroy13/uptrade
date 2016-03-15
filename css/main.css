@@ -116,8 +116,8 @@ li {
       display: initial; } }
   .bars__icon {
     display: block;
-    margin-bottom: 7px;
-    width: 40px;
+    margin-bottom: 5px;
+    width: 30px;
     border-bottom: 2px solid white;
     border-radius: 1px; }
 
