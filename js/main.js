@@ -116,13 +116,6 @@ $(function(){
     }
   ];
 
-  Handlebars.registerHelper('if_eq', function(a, b) {
-    if (a == b) {
-        return opts.fn(this);
-    } else {
-        return opts.inverse(this);
-    }
-  });
   var productosTemplate = Handlebars.compile($('#productos-template').html());
   $('.js-productos').html(productosTemplate(productos));
 
