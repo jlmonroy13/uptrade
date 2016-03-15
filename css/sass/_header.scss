@@ -1,3 +1,15 @@
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  z-index: 120;
+  background-color: rgba(25, 29, 30, 0.85);
+  margin-bottom: 0;
+}
+header {
+  margin-bottom: -102px;
+}
+
 .navbar__title {
   float: left;
 }
@@ -17,7 +29,7 @@
     padding-top: 4.4rem;
     padding-left: 0;
     z-index: 99;
-    text-align: center;
+    text-align: left;
   }
   &--expanded{
     right: 0;
@@ -28,6 +40,7 @@
     @media (max-width: 1199px) {
       display: block;
       padding: 1.5rem 0;
+      padding-left: 50px;
       border-bottom: 1px solid #81A6A3;
       margin-right: 0;
     }

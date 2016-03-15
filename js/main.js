@@ -1,4 +1,12 @@
 $(function(){
+	$(document).scroll(function () { 
+		var y = $(this).scrollTop();
+    	if (y > 102) {
+    		$('header').addClass('fixed-header');
+		}else if (y < 103) {
+			$('header').removeClass('fixed-header');
+		}
+	});
 	$('.navbar-toggle').on('click', function(){
 		$('.navbar').toggleClass('navbar-collap');
 	});
@@ -20,6 +28,5 @@ $(function(){
 		$('.js-nav-expanded').removeClass('nav-list--expanded');
 		$('.js-retract-nav').removeClass('overlay--visible');
 	})
-
 });
 	
