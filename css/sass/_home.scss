@@ -4,16 +4,29 @@ hr {
     width: 161px;
 }
 .home-slider {
-	background: url('../img/bckg/home_bckg1.jpg') no-repeat;
-	background-size: cover;
-	height: 597px;
-	// margin-top: -102px;
-	padding-top: 200px;
-	@media(max-width: 730px) {
-		background: url('../img/bckg/home_bckg1_movil.jpg') no-repeat;
-		background-size: cover;
+	position: relative;
+	height: 573px;
+	img.img-slider {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		height: 573px;
+		z-index: 0;
+		margin-bottom: -65px;
+		display: none;
+	}
+	img.img-slider-visible {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		height: 573px;
+		z-index: 0;
+		margin-bottom: -65px;
+		display: inline-block;
 	}
 	.home-bckg-slider {
+		position: absolute;
+		top: 200px;
 		margin-left: 10%;
 		@media(max-width: 950px) {
 			margin-left: 17%;
@@ -52,6 +65,7 @@ hr {
 }
 .bar-home {
 	padding-top: 100px !important;
+	position: relative;
 	@media(min-width: 1300px) {
 		height: 589px !important;
 	}
