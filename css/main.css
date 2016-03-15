@@ -640,6 +640,9 @@ body .home-whatdo .se-content--quienes-somos {
     .productos__item:hover {
       text-decoration: none;
       color: black; }
+    .productos__item:focus {
+      text-decoration: none;
+      color: black; }
 
 .product-list {
   text-align: center; }
