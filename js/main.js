@@ -1,4 +1,5 @@
 $(function(){
+	$('.our-technology-rds').parallax({imageSrc:'img/bckg/nuestra-tecnologia_RDSbckg.jpg'});
   $(document).scroll(function () { 
     var y = $(this).scrollTop();
       if (y > 102) {

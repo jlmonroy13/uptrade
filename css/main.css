@@ -593,8 +593,10 @@ body .home-whatdo .se-content--quienes-somos {
         text-align: left;
         max-width: 283px;
         line-height: 1.8; }
+        @media (max-width: 754px) {
+          #our-technology .our-technology-audit .container .row p {
+            max-width: 600px; } }
 #our-technology .our-technology-rds {
-  background: url("../img/bckg/nuestra-tecnologia_RDSbckg.jpg") no-repeat;
   background-size: cover;
   padding: 17.3571rem 0;
   text-align: center; }
@@ -607,9 +609,15 @@ body .home-whatdo .se-content--quienes-somos {
     font-weight: 600; }
 #our-technology .our-technology-productosRel {
   padding: 35px 0; }
+  @media (max-width: 776px) {
+    #our-technology .our-technology-productosRel {
+      padding: 35px 25px; } }
   #our-technology .our-technology-productosRel .container .row:first-child div img {
     display: inline-block;
-    margin-right: 15px; }
+    margin-right: 15px;
+    opacity: 0.9; }
+    #our-technology .our-technology-productosRel .container .row:first-child div img:hover {
+      opacity: 1; }
   #our-technology .our-technology-productosRel .container .row:first-child div h5 {
     display: inline-block;
     vertical-align: middle;
@@ -630,7 +638,10 @@ body .home-whatdo .se-content--quienes-somos {
   #our-technology .our-technology-productosRel .container .row:last-child div {
     text-align: center; }
     #our-technology .our-technology-productosRel .container .row:last-child div img {
-      width: 100%; }
+      width: 100%;
+      opacity: 0.9; }
+      #our-technology .our-technology-productosRel .container .row:last-child div img:hover {
+        opacity: 1; }
     #our-technology .our-technology-productosRel .container .row:last-child div p {
       color: #263347;
       font-weight: 600;
@@ -639,6 +650,9 @@ body .home-whatdo .se-content--quienes-somos {
       margin-bottom: 0; }
       #our-technology .our-technology-productosRel .container .row:last-child div p:last-child {
         color: #768C8C; }
+        @media (max-width: 975px) {
+          #our-technology .our-technology-productosRel .container .row:last-child div p:last-child {
+            margin-bottom: 30px; } }
 
 .job {
   padding: 3.2rem;
@@ -693,6 +707,10 @@ body .home-whatdo .se-content--quienes-somos {
   background: url("../img/bckg/productos_bckg1.jpg");
   background-size: cover;
   height: 597px; }
+  @media (max-width: 856px) {
+    .woman {
+      background: url("../img/bckg/productos_bckg1_movil.jpg");
+      background-size: cover; } }
 
 .productos {
   text-align: center;
@@ -719,7 +737,10 @@ body .home-whatdo .se-content--quienes-somos {
 .product-list {
   text-align: center; }
   .product-list .container .row > div {
-    min-height: 266px; }
+    min-height: 322px; }
+    @media (max-width: 420px) {
+      .product-list .container .row > div {
+        min-height: 272px; } }
     .product-list .container .row > div .img-container {
       position: relative; }
       .product-list .container .row > div .img-container img {
@@ -1073,7 +1094,7 @@ body .home-whatdo .se-content--quienes-somos {
   .productos-relacionados__image {
     width: 90%;
     margin-bottom: 15px;
-    opacity: 0.8; }
+    opacity: 0.9; }
     .productos-relacionados__image:hover {
       opacity: 1; }
   .productos-relacionados__image-title {
