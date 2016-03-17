@@ -32,10 +32,10 @@
           <li class="nav-list__item"><a class="nav-list__link" href="index.html">HOME</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="quienes-somos.html">QUIÉNES SOMOS</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="nuestra-tecnologia.html">NUESTRA TECNOLOGÍA</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="productos.html">PRODUCTOS</a></li>
+          <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="productos.html">PRODUCTOS</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="contacto.html">CONTACTO</a></li>
           <li class="nav-list__item"><a class="nav-list__link" href="trabaja-con-nosotros.html">TRABAJA CON NOSOTROS</a></li>
-          <li class="nav-list__item nav-list__item--button"><button><a class="button-primary button-primary--login" href="#">LOGIN</a></button></li> 
+          <li class="nav-list__item nav-list__item--button"><button><a class="js-login-button button-primary button-primary--login" href="#">LOGIN</a></button></li> 
         </ul>
       </nav>
     </div>
@@ -45,11 +45,11 @@
     <h3 class="productos-bckg__legend">Producto Cuantitativo</h3>
   </div>
   <div class="bar">
-    <p class="bar__legend bar__legend--actividad">Permite conocer el nivel de implementación del material pop y las actividades comerciales en el punto de venta, identificando por multiples niveles la presencia de las actividades.</p>
+    <p class="js-bar__legend bar__legend bar__legend--actividad">Permite conocer el nivel de implementación del material pop y las actividades comerciales en el punto de venta, identificando por multiples niveles la presencia de las actividades.</p>
   </div>
   <div class="advantages">
     <div class="container">
-      <div class="col-xs-12 col-sm-12 col-md-7">
+      <div class="advantages__text js-advantages-text col-xs-12 col-sm-12 col-md-7">
         <div>
           <h3 class="advantages__title">Beneficios</h3>
           <ul class="advantages__item">
@@ -74,7 +74,7 @@
         </div>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-5">
-          <div class="advantages__container-image">
+          <div class="advantages__container-image js-advantages-image">
             <img class="advantages__image advantages__image--actividad" src="img/others/producto-actividad-grafica.jpg" alt="">
           </div>
       </div>
@@ -86,19 +86,20 @@
       <div class="row">
         <div class="col-md-6">
           <div class="productos-relacionados__container">
-            <img class="productos-relacionados__image" src="img/bckg/nuestra-tecnologia_nsgbckg.jpg" alt="">
+            <a href="productos-nsg.html"><img class="productos-relacionados__image" src="img/bckg/nuestra-tecnologia_nsgbckg.jpg" alt=""></a>
             <h4 class="productos-relacionados__image-title">NSG - Nivel de Servicio de Góndola</h4>
             <h5 class="productos-relacionados__image-legend">Producto Cuantitativo<h5>
           </div>
         </div>
         <div class="col-md-6">
           <div class="productos-relacionados__container">
-            <img class="productos-relacionados__image" src="img/bckg/nuestra-tecnologia_preciosbckg.jpg" alt="">
+            <a href="productos-precios.html"><img class="productos-relacionados__image" src="img/bckg/nuestra-tecnologia_preciosbckg.jpg" alt=""></a>
             <h4 class="productos-relacionados__image-title">Precios</h4>
             <h5 class="productos-relacionados__image-legend">Producto Cuantitativo</h5>
           </div>
         </div>
       </div>
+      <a href="productos.html" class="btn">VER TODOS LOS PRODUCTOS</a> 
     </div>
   </div>
   <!-- FOOTER -->
@@ -132,7 +133,8 @@
     </div>
   </footer>
   <!-- Javascript Files -->
-  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <!-- <script src="//code.jquery.com/jquery-1.12.0.min.js"></script> -->
+  <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>

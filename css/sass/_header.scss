@@ -64,6 +64,9 @@ header {
       color: #93D900;
       text-decoration: none;
     }
+    &--active {
+      color: #93D900;
+    }
   }
 }
 
@@ -79,12 +82,12 @@ header {
     }
     &:hover {
       text-decoration: none;
-      background-color: #93D900;
+      background-color: #75AA00;
       color: white;
     }
     &:focus {
       text-decoration: none;
-      background-color: #93D900;
+      background-color: #75AA00;
       color: white;
     }
   }

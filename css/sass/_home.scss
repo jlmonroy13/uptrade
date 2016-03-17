@@ -12,8 +12,8 @@ hr {
 		top: 0;
 		height: 573px;
 		z-index: 0;
-		margin-bottom: -65px;
 		display: none;
+		margin-bottom: -65px;
 	}
 	img.img-slider-visible {
 		width: 100%;
@@ -27,7 +27,30 @@ hr {
 	.home-bckg-slider {
 		position: absolute;
 		top: 200px;
+		display: none;
 		margin-left: 10%;
+		@media(max-width: 950px) {
+			margin-left: 17%;
+		}
+		h2 {
+			font-weight: 700;
+			font-size: 1.5714rem;
+		}
+		p {
+			font-weight: 600;
+			font-size: 1.1428rem;
+			color: white;
+			max-width: 326px;
+			@media(max-width: 442px) {
+			    max-width: 303px;
+			}
+		}
+	}
+	.home-bckg-slider-visible {
+		position: absolute;
+		top: 200px;
+		margin-left: 10%;
+		display: block;
 		@media(max-width: 950px) {
 			margin-left: 17%;
 		}
@@ -49,6 +72,16 @@ hr {
 		position: absolute;
 		top: 240px;
 		font-size: 1.5714rem;
+		&:hover {
+			color: $light-green;
+			font-size: 1.7857rem;
+		}
+		&:active {
+			color: white;
+		}
+		&:focus {
+			color: white;
+		}
 	}
 	.slide-next {
 			right: 60px;
@@ -161,7 +194,7 @@ hr {
 	}
 }
 .home-ourTech {
-	background: url('../img/bckg/home_tecno_bckg1bettter2.png') no-repeat;
+	background: url('../img/bckg/home_tecno_bg1.png') no-repeat;
 	background-size: cover;
 	text-align: center;
 	height: 860px;
@@ -171,36 +204,80 @@ hr {
 		height: 1070px;
 		padding-top: 480px;
 	}
-	h2 {
-		font-size: 1.5714rem;
-		font-weight: 600;
-	}
-	h3 {
-		font-weight: 400;
-		font-size: 1.2857rem;
-		color: white;
-	}
-	hr {
-		width: 121px !important;
-	}
-	p {
-		font-size: 1rem;
-		font-weight: 600;
-		color: white;
-		max-width: 373px;
-		margin: 14px auto;
-		line-height: 1.7;
-		@media(max-width: 565px) {
-		    max-width: 263px;
+	.ourTech-slider {
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		h2 {
+			font-size: 1.5714rem;
+			font-weight: 600;
+		}
+		h3 {
+			font-weight: 400;
+			font-size: 1.2857rem;
+			color: white;
+		}
+		hr {
+			width: 121px !important;
+		}
+		p {
+			font-size: 1rem;
+			font-weight: 600;
+			color: white;
+			max-width: 373px;
+			margin: 14px auto;
+			line-height: 1.7;
+			@media(max-width: 565px) {
+			    max-width: 263px;
+			}
+		}
+		.btn {
+			font-weight: 600;
+			font-size: 0.8571rem;
+			background-color: $light-green;
+			&:hover {
+				background-color: #75AA00 !important;
+				color: white;
+			}
 		}
 	}
-	.btn {
-		font-weight: 600;
-		font-size: 0.8571rem;
-		background-color: $light-green;
-		&:hover {
-			background-color: #75AA00 !important;
+	.ourTech-slider-visible {
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		h2 {
+			font-size: 1.5714rem;
+			font-weight: 600;
+		}
+		h3 {
+			font-weight: 400;
+			font-size: 1.2857rem;
 			color: white;
+		}
+		hr {
+			width: 121px !important;
+		}
+		p {
+			font-size: 1rem;
+			font-weight: 600;
+			color: white;
+			max-width: 373px;
+			margin: 14px auto;
+			line-height: 1.7;
+			@media(max-width: 565px) {
+			    max-width: 263px;
+			}
+		}
+		.btn {
+			font-weight: 600;
+			font-size: 0.8571rem;
+			background-color: $light-green;
+			&:hover {
+				background-color: #75AA00 !important;
+				color: white;
+			}
 		}
 	}
 	.slidebtn {
@@ -209,6 +286,16 @@ hr {
 		font-size: 1.5714rem;
 		@media(min-width: 1300px) {
 			top: 600px;
+		}
+		&:hover {
+			color: $light-green;
+			font-size: 1.7857rem;
+		}
+		&:active {
+			color: white;
+		}
+		&:focus {
+			color: white;
 		}
 	}
 	.slide-next {

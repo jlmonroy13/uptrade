@@ -1,4 +1,17 @@
 $(function(){
+
+  $(document).scroll(function () { 
+    var y = $(this).scrollTop();
+    if (y > 600) {
+      $('.js-advantages-text').addClass('advantages__text--visible');
+      $('.js-advantages-image').addClass('advantages__container-image--visible');
+    }
+    if (y > 200) {
+      $('.js-bar__legend').addClass('bar__legend--visible');
+    }
+  });
+
+	$('.our-technology-rds').parallax({imageSrc:'img/bckg/nuestra-tecnologia_RDSbckg.jpg'});
   $(document).scroll(function () { 
     var y = $(this).scrollTop();
       if (y > 102) {
@@ -19,13 +32,13 @@ $(function(){
     $(this).children('.product-more').hide();
   });
 
-
+  //FIRST HOME SLIDER
 	$('#nexthome1').click(function(event){
 		event.preventDefault()
 		var size = $('.home-slider').find('.img-slider').size();
 		$('.home-slider').find('.img-slider').each(function(index, value) {
 			if($(value).hasClass('img-slider-visible')) {
-				$(value).fadeOut();
+				$(value).fadeOut('slow');
 				$(value).removeClass('img-slider-visible');
 				if(index+1<size) {
 					$($('.home-slider').find('.img-slider').get(index+1)).fadeIn("slow","swing");
@@ -34,6 +47,23 @@ $(function(){
 				}else {
 					$($('.home-slider').find('.img-slider').get(0)).fadeIn("slow","swing");
 					$($('.home-slider').find('.img-slider').get(0)).addClass('img-slider-visible');
+					return false;
+				}
+			}
+		});
+
+		var size = $('.home-slider').find('.home-bckg-slider').size();
+		$('.home-slider').find('.home-bckg-slider').each(function(index, value) {
+			if($(value).hasClass('home-bckg-slider-visible')) {
+				$(value).fadeOut(300);
+				$(value).removeClass('home-bckg-slider-visible');
+				if(index==0) {
+					$($('.home-slider').find('.home-bckg-slider').get(index+1)).fadeIn(1700);
+					$($('.home-slider').find('.home-bckg-slider').get(index+1)).addClass('home-bckg-slider-visible');
+					return false;
+				}else {
+					$($('.home-slider').find('.home-bckg-slider').get(0)).fadeIn(1700);
+					$($('.home-slider').find('.home-bckg-slider').get(0)).addClass('home-bckg-slider-visible');
 					return false;
 				}
 			}
@@ -54,6 +84,75 @@ $(function(){
 				}else {
 					$($('.home-slider').find('.img-slider').get(index-1)).fadeIn("slow","swing");
 					$($('.home-slider').find('.img-slider').get(index-1)).addClass('img-slider-visible');
+					return false;
+				}
+			}
+		});
+		var size = $('.home-slider').find('.home-bckg-slider').size();
+		$('.home-slider').find('.home-bckg-slider').each(function(index, value) {
+			if($(value).hasClass('home-bckg-slider-visible')) {
+				$(value).fadeOut(300);
+				$(value).removeClass('home-bckg-slider-visible');
+				if(index==0) {
+					$($('.home-slider').find('.home-bckg-slider').get(size-1)).fadeIn(1700);
+					$($('.home-slider').find('.home-bckg-slider').get(size-1)).addClass('home-bckg-slider-visible');
+					return false;
+				}else {
+					$($('.home-slider').find('.home-bckg-slider').get(index-1)).fadeIn(1700);
+					$($('.home-slider').find('.home-bckg-slider').get(index-1)).addClass('home-bckg-slider-visible');
+					return false;
+				}
+			}
+		});
+	});
+
+	//TECH HOME SLIDER
+	$('#technext').click(function(){
+		var size = $('.home-ourTech').find('.ourTech-slider').size();
+		$('.home-ourTech').find('.ourTech-slider').each(function(index, value) {
+			var indeximg = $(value).data('index');
+			if($(value).hasClass('ourTech-slider-visible')) {
+				$(value).fadeOut('slow');
+				$(value).removeClass('ourTech-slider-visible');
+				if(index+1<size) {
+					var indeximg1 = indeximg + 1;
+					$('.home-ourTech').css( "background", "url('../img/bckg/home_tecno_bg"+indeximg1+".png') no-repeat" );
+					$('.home-ourTech').css( "background-size", "cover" );
+					$($('.home-ourTech').find('.ourTech-slider').get(index+1)).fadeIn("slow","swing");
+					$($('.home-ourTech').find('.ourTech-slider').get(index+1)).addClass('ourTech-slider-visible');
+					return false;
+				}else {
+					var indeximg2 = indeximg - 1;
+					$('.home-ourTech').css( "background", "url('../img/bckg/home_tecno_bg"+indeximg2+".png') no-repeat" );
+					$('.home-ourTech').css( "background-size", "cover" );
+					$($('.home-ourTech').find('.ourTech-slider').get(0)).fadeIn("slow","swing");
+					$($('.home-ourTech').find('.ourTech-slider').get(0)).addClass('ourTech-slider-visible');
+					return false;
+				}
+			}
+		});
+	});
+
+	$('#techprev').click(function(){
+		var size = $('.home-ourTech').find('.ourTech-slider').size();
+		$('.home-ourTech').find('.ourTech-slider').each(function(index, value) {
+			var indeximga = $(value).data('index');
+			if($(value).hasClass('ourTech-slider-visible')) {
+				$(value).fadeOut();
+				$(value).removeClass('ourTech-slider-visible');
+				if(index==0) {
+					var indeximga3 = indeximga + 1;
+					$('.home-ourTech').css( "background", "url('../img/bckg/home_tecno_bg"+indeximga3+".png') no-repeat" );
+					$('.home-ourTech').css( "background-size", "cover" );
+					$($('.home-ourTech').find('.ourTech-slider').get(size-1)).fadeIn("slow","swing");
+					$($('.home-ourTech').find('.ourTech-slider').get(size-1)).addClass('ourTech-slider-visible');
+					return false;
+				}else {
+					var indeximga4 = indeximga - 1;
+					$('.home-ourTech').css( "background", "url('../img/bckg/home_tecno_bg"+indeximga4+".png') no-repeat" );
+					$('.home-ourTech').css( "background-size", "cover" );
+					$($('.home-ourTech').find('.ourTech-slider').get(index-1)).fadeIn("slow","swing");
+					$($('.home-ourTech').find('.ourTech-slider').get(index-1)).addClass('ourTech-slider-visible');
 					return false;
 				}
 			}
@@ -150,7 +249,7 @@ $(function(){
     },
     {
       nombre: "B2B",
-      tipo: "Producto Cuantitativo",
+      tipo: "Producto Sistémicos TI",
       src: "img/bckg/producto-catalogo-b2b.jpg",
       href: "productos-b2b.html",
       select: true
@@ -203,5 +302,7 @@ $(function(){
     event.preventDefault();
     $('.js-productos').html(productosTemplate(productos));
   });
+
+  
 });
   

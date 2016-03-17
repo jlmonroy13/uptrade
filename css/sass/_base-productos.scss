@@ -106,6 +106,12 @@
     color: white;
     max-width: 755px;
     line-height: 2;
+    position: relative;
+    left: -620px;
+    transition: left 2s ease;
+    &--visible {
+      left: 0;
+    }
     &--plano {
         max-width: 575px !important;
     }
@@ -129,6 +135,14 @@
 }
 .advantages {
   padding: 3rem 0;
+  &__text {
+    position: relative;
+    left: -750px;
+    transition: left 2s ease;
+  &--visible {
+    left: 0;
+  }
+  }
   &__item {
     text-align: left;
     @media (max-width: 570px) {
@@ -152,7 +166,13 @@
   }
   &__container-image {
     text-align: center;
-    margin-top: 5.7rem;             
+    margin-top: 5.7rem;
+    position: relative;
+    right: -580px;
+    transition: right 2s ease;
+    &--visible {
+      right: 0;
+    }             
   }
   &__image {
     width:  60%;
@@ -384,14 +404,20 @@
 }
 .productos-relacionados {
   padding: 3rem 0;
+  text-align: center;
   &__title {
     font-size: 1.2rem;
     color: #253248;
     margin-top: 0;
+    text-align: left;
   }
   &__image {
     width: 90%;
     margin-bottom: 15px;
+    opacity: 0.9;
+    &:hover {
+      opacity: 1;
+    }
   }
   &__image-title {
     font-size: 1rem;
@@ -409,5 +435,19 @@
   }
   &__container {
     text-align: center;
+  }
+  .btn {
+    font-weight: 600;
+    font-size: 0.8571rem;
+    background-color: $light-green;
+    margin-bottom: 60px;
+    border: 2px solid $light-green;
+    color: white;
+    margin: 10px 0;
+    &:hover {
+      background-color: white !important;
+      color: $light-green;
+      border: 2px solid $light-green;
+    }
   }
 }

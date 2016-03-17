@@ -2,6 +2,10 @@
   background: url("../img/bckg/productos_bckg1.jpg");
   background-size: cover;
   height: 597px;
+  @media(max-width: 856px) {
+    background: url("../img/bckg/productos_bckg1_movil.jpg");
+    background-size: cover;
+  }
 }
 .productos {
   text-align: center;
@@ -35,7 +39,10 @@
   .container {
     .row {
       >div {
-        min-height: 266px;
+        min-height: 322px;
+        @media(max-width: 420px) {
+          min-height: 272px;
+        }
         .img-container {
           position: relative;
           img {
@@ -78,7 +85,9 @@
     }
   }
 }
-
+.bar__title--productos {
+  max-width: 380px;
+}
 
 
 
