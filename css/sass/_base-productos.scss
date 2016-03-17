@@ -106,6 +106,12 @@
     color: white;
     max-width: 755px;
     line-height: 2;
+    position: relative;
+    left: -620px;
+    transition: left 2s ease;
+    &--visible {
+      left: 0;
+    }
     &--plano {
         max-width: 575px !important;
     }
@@ -129,6 +135,14 @@
 }
 .advantages {
   padding: 3rem 0;
+  &__text {
+    position: relative;
+    left: -750px;
+    transition: left 2s ease;
+  &--visible {
+    left: 0;
+  }
+  }
   &__item {
     text-align: left;
     @media (max-width: 570px) {
@@ -152,7 +166,13 @@
   }
   &__container-image {
     text-align: center;
-    margin-top: 5.7rem;             
+    margin-top: 5.7rem;
+    position: relative;
+    right: -580px;
+    transition: right 2s ease;
+    &--visible {
+      right: 0;
+    }             
   }
   &__image {
     width:  60%;

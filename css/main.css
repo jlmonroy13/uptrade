@@ -867,7 +867,12 @@ body .home-whatdo .se-content--quienes-somos {
     font-weight: 400;
     color: white;
     max-width: 755px;
-    line-height: 2; }
+    line-height: 2;
+    position: relative;
+    left: -620px;
+    transition: left 2s ease; }
+    .bar__legend--visible {
+      left: 0; }
     .bar__legend--plano {
       max-width: 575px !important; }
     .bar__legend--exhibi {
@@ -884,6 +889,12 @@ body .home-whatdo .se-content--quienes-somos {
 
 .advantages {
   padding: 3rem 0; }
+  .advantages__text {
+    position: relative;
+    left: -750px;
+    transition: left 2s ease; }
+    .advantages__text--visible {
+      left: 0; }
   .advantages__item {
     text-align: left; }
     @media (max-width: 570px) {
@@ -904,7 +915,12 @@ body .home-whatdo .se-content--quienes-somos {
     max-width: 550px; }
   .advantages__container-image {
     text-align: center;
-    margin-top: 5.7rem; }
+    margin-top: 5.7rem;
+    position: relative;
+    right: -580px;
+    transition: right 2s ease; }
+    .advantages__container-image--visible {
+      right: 0; }
   .advantages__image {
     width: 60%; }
     .advantages__image--plano {

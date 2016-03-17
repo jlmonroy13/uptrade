@@ -1,4 +1,16 @@
 $(function(){
+
+  $(document).scroll(function () { 
+    var y = $(this).scrollTop();
+    if (y > 600) {
+      $('.js-advantages-text').addClass('advantages__text--visible');
+      $('.js-advantages-image').addClass('advantages__container-image--visible');
+    }
+    if (y > 200) {
+      $('.js-bar__legend').addClass('bar__legend--visible');
+    }
+  });
+
 	$('.our-technology-rds').parallax({imageSrc:'img/bckg/nuestra-tecnologia_RDSbckg.jpg'});
   $(document).scroll(function () { 
     var y = $(this).scrollTop();
@@ -271,5 +283,7 @@ $(function(){
     event.preventDefault();
     $('.js-productos').html(productosTemplate(productos));
   });
+
+  
 });
   
