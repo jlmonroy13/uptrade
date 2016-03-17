@@ -154,6 +154,8 @@ hr {
   width: 161px; }
 
 .home-slider {
+  background: url("../img/bckg/home_bckg_final1.jpg") no-repeat;
+  background-size: cover;
   position: relative;
   height: 573px; }
   .home-slider img.img-slider {
@@ -784,40 +786,40 @@ body .home-whatdo .se-content--quienes-somos {
   text-align: center;
   padding-top: 230px; }
   .productos-bckg--nsg {
-    background: url("../img/bckg/producto-bckg-nsg.jpg");
+    background: url("../img/bckg/producto-bckg-nsg_2x.jpg");
     background-size: cover; }
   .productos-bckg--precios {
-    background: url("../img/bckg/producto-bckg-precios.jpg");
+    background: url("../img/bckg/producto-bckg-precios_2x.jpg");
     background-size: cover; }
   .productos-bckg--facing {
-    background: url("../img/bckg/producto-bckg-facing.jpg");
+    background: url("../img/bckg/producto-bckg-facing_2x.jpg");
     background-size: cover; }
   .productos-bckg--exhibi {
-    background: url("../img/bckg/producto-bckg-exhibi.jpg");
+    background: url("../img/bckg/producto-bckg-exhibi_2x.jpg");
     background-size: cover; }
   .productos-bckg--plano {
-    background: url("../img/bckg/producto-bckg-plano.jpg");
+    background: url("../img/bckg/producto-bckg-plano_2x.jpg");
     background-size: cover; }
   .productos-bckg--actividad {
-    background: url("../img/bckg/producto-bckg-actividad.jpg");
+    background: url("../img/bckg/producto-bckg-actividad_2x.jpg");
     background-size: cover; }
   .productos-bckg--arbol {
-    background: url("../img/bckg/producto-bckg-arbol.jpg");
+    background: url("../img/bckg/producto-bckg-arbol_2x.jpg");
     background-size: cover; }
   .productos-bckg--pdv {
-    background: url("../img/bckg/producto-bckg-pdv2.jpg");
+    background: url("../img/bckg/producto-bckg-pdv2_2x.jpg");
     background-size: cover; }
   .productos-bckg--mystery {
-    background: url("../img/bckg/producto-bckg-mystery.jpg");
+    background: url("../img/bckg/producto-bckg-mystery_2x.jpg");
     background-size: cover; }
   .productos-bckg--self {
-    background: url("../img/bckg/producto-bckg-self.jpg");
+    background: url("../img/bckg/producto-bckg-self_2x.jpg");
     background-size: cover; }
   .productos-bckg--bsines {
-    background: url("../img/bckg/producto-bckg-bsines.jpg");
+    background: url("../img/bckg/producto-bckg-bsines_2x.jpg");
     background-size: cover; }
   .productos-bckg--b2b {
-    background: url("../img/bckg/producto-bckg-b2b.jpg");
+    background: url("../img/bckg/producto-bckg-b2b_2x.jpg");
     background-size: cover; }
   .productos-bckg__title {
     font-size: 1.5714rem;
@@ -1125,9 +1127,15 @@ body .home-whatdo .se-content--quienes-somos {
       border: 2px solid #95D700; }
 
 .map {
-  background: url("../img/bckg/contacto_bg.jpg");
-  background-size: cover;
-  height: 597px; }
+  height: 597px;
+  margin-top: -102px;
+  position: relative; }
+  .map > div {
+    position: absolute;
+    width: 100% !important; }
+
+.contact-header {
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .contacto_form {
   padding: 35px 0; }

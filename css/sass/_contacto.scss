@@ -1,8 +1,14 @@
 .map {
-	background: url("../img/bckg/contacto_bg.jpg");
-	background-size: cover;
 	height: 597px;
-
+	margin-top: -102px;
+	position: relative;
+	>div {
+		position: absolute;
+		width: 100% !important;
+	}
+}
+.contact-header {
+	background-color: rgba(0,0,0,0.3);
 }
 .contacto_form {
 	padding: 35px 0; 

@@ -23,35 +23,25 @@ $(function(){
   //FIRST HOME SLIDER
 	$('#nexthome1').click(function(event){
 		event.preventDefault()
-		var size = $('.home-slider').find('.img-slider').size();
-		$('.home-slider').find('.img-slider').each(function(index, value) {
-			if($(value).hasClass('img-slider-visible')) {
-				$(value).fadeOut('slow');
-				$(value).removeClass('img-slider-visible');
-				if(index+1<size) {
-					$($('.home-slider').find('.img-slider').get(index+1)).fadeIn("slow","swing");
-					$($('.home-slider').find('.img-slider').get(index+1)).addClass('img-slider-visible');
-					return false;
-				}else {
-					$($('.home-slider').find('.img-slider').get(0)).fadeIn("slow","swing");
-					$($('.home-slider').find('.img-slider').get(0)).addClass('img-slider-visible');
-					return false;
-				}
-			}
-		});
-
 		var size = $('.home-slider').find('.home-bckg-slider').size();
 		$('.home-slider').find('.home-bckg-slider').each(function(index, value) {
+      var indImg = $(value).data('index');
 			if($(value).hasClass('home-bckg-slider-visible')) {
 				$(value).fadeOut(300);
 				$(value).removeClass('home-bckg-slider-visible');
-				if(index==0) {
+				if(index+1<size) {
+          indImg += 1;
 					$($('.home-slider').find('.home-bckg-slider').get(index+1)).fadeIn(1700);
 					$($('.home-slider').find('.home-bckg-slider').get(index+1)).addClass('home-bckg-slider-visible');
+          $('.home-slider').css( "background", "url('../img/bckg/home_bckg_final"+indImg+".jpg') no-repeat");
+          $('.home-slider').css( "background-size", "cover" );
 					return false;
 				}else {
+          indImg = indImg -2;
 					$($('.home-slider').find('.home-bckg-slider').get(0)).fadeIn(1700);
 					$($('.home-slider').find('.home-bckg-slider').get(0)).addClass('home-bckg-slider-visible');
+          $('.home-slider').css( "background", "url('../img/bckg/home_bckg_final"+indImg+".jpg') no-repeat");
+          $('.home-slider').css( "background-size", "cover" );
 					return false;
 				}
 			}
@@ -60,34 +50,25 @@ $(function(){
 
 	$('#prevhome1').click(function(event){
 		event.preventDefault()
-		var size = $('.home-slider').find('.img-slider').size();
-		$('.home-slider').find('.img-slider').each(function(index, value) {
-			if($(value).hasClass('img-slider-visible')) {
-				$(value).fadeOut();
-				$(value).removeClass('img-slider-visible');
-				if(index==0) {
-					$($('.home-slider').find('.img-slider').get(size-1)).fadeIn("slow","swing");
-					$($('.home-slider').find('.img-slider').get(size-1)).addClass('img-slider-visible');
-					return false;
-				}else {
-					$($('.home-slider').find('.img-slider').get(index-1)).fadeIn("slow","swing");
-					$($('.home-slider').find('.img-slider').get(index-1)).addClass('img-slider-visible');
-					return false;
-				}
-			}
-		});
 		var size = $('.home-slider').find('.home-bckg-slider').size();
 		$('.home-slider').find('.home-bckg-slider').each(function(index, value) {
+      var indImg2 = $(value).data('index');
 			if($(value).hasClass('home-bckg-slider-visible')) {
-				$(value).fadeOut(300);
+				$(value).fadeOut();
 				$(value).removeClass('home-bckg-slider-visible');
 				if(index==0) {
-					$($('.home-slider').find('.home-bckg-slider').get(size-1)).fadeIn(1700);
+          indImg2 = indImg2 + 2;
+					$($('.home-slider').find('.home-bckg-slider').get(size-1)).fadeIn("slow","swing");
 					$($('.home-slider').find('.home-bckg-slider').get(size-1)).addClass('home-bckg-slider-visible');
+          $('.home-slider').css( "background", "url('../img/bckg/home_bckg_final"+indImg2+".jpg') no-repeat");
+          $('.home-slider').css( "background-size", "cover" );
 					return false;
 				}else {
-					$($('.home-slider').find('.home-bckg-slider').get(index-1)).fadeIn(1700);
+          indImg2 = indImg2 - 1;
+					$($('.home-slider').find('.home-bckg-slider').get(index-1)).fadeIn("slow","swing");
 					$($('.home-slider').find('.home-bckg-slider').get(index-1)).addClass('home-bckg-slider-visible');
+          $('.home-slider').css( "background", "url('../img/bckg/home_bckg_final"+indImg2+".jpg') no-repeat");
+          $('.home-slider').css( "background-size", "cover" );
 					return false;
 				}
 			}

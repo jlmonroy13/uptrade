@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Webpage Description -->
-  <title>UpTrade</title>
-  <meta name="description" content="UpTrade">
-  <meta name="author" content="Jorge Monroy - Selvio Pérez">
-  <meta name="keywords" content="" />
-  <!-- Styles --> 
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Webpage Description -->
+	<title>UpTrade</title>
+	<meta name="description" content="UpTrade">
+	<meta name="author" content="Jorge Monroy - Selvio Pérez">
+	<meta name="keywords" content="" />
+	<!-- Styles --> 
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<!-- Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 
 </head>
 <body class="home">
-  <!--========= HEADER ===============-->
-  <header>
-    <div class="container">
-      <nav role="navigation">
-        <h1 class="navbar__title"><a href="index.html"><img class="navbar__logo" src="img/icn/logo.png" alt=""></a></h1>
-        <a href="#" class="bars js-expand-nav">
-          <span class="bars__icon"></span>
-          <span class="bars__icon"></span>
-          <span class="bars__icon"></span>
-        </a>
-        <div class="overlay js-retract-nav"></div>
-        <ul class="nav-list js-nav-expanded">
-          <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="index.html">HOME</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="quienes-somos.html">QUIÉNES SOMOS</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="nuestra-tecnologia.html">NUESTRA TECNOLOGÍA</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="productos.html">PRODUCTOS</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="contacto.html">CONTACTO</a></li>
-          <li class="nav-list__item"><a class="nav-list__link" href="trabaja-con-nosotros.html">TRABAJA CON NOSOTROS</a></li>
-          <li class="nav-list__item nav-list__item--button"><button><a class="button-primary button-primary--login" href="#">LOGIN</a></button></li> 
-        </ul>
-      </nav>
-    </div>
-  </header>
+	<!--========= HEADER ===============-->
+	<header>
+		<div class="container">
+			<nav role="navigation">
+				<h1 class="navbar__title"><a href="index.html"><img class="navbar__logo" src="img/icn/logo.png" alt=""></a></h1>
+				<a href="#" class="bars js-expand-nav">
+					<span class="bars__icon"></span>
+					<span class="bars__icon"></span>
+					<span class="bars__icon"></span>
+				</a>
+				<div class="overlay js-retract-nav"></div>
+				<ul class="nav-list js-nav-expanded">
+					<li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="index.html">HOME</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="quienes-somos.html">QUIÉNES SOMOS</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="nuestra-tecnologia.html">NUESTRA TECNOLOGÍA</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="productos.html">PRODUCTOS</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="contacto.html">CONTACTO</a></li>
+					<li class="nav-list__item"><a class="nav-list__link" href="trabaja-con-nosotros.html">TRABAJA CON NOSOTROS</a></li>
+					<li class="nav-list__item nav-list__item--button"><button><a class="button-primary button-primary--login" href="#">LOGIN</a></button></li> 
+				</ul>
+			</nav>
+		</div>
+	</header>
 	<!-- FIRST SECTION (SLIDER) -->
 	<div class="home-slider">
-		<img src="img/bckg/home_bckg_final.jpg" alt="" class="img-slider img-slider-visible">
-		<img src="img/bckg/home_bckg_final2.jpg" alt="" class="img-slider">
-		<img src="img/bckg/home_bckg_final3.jpg" alt="" class="img-slider">
-		<div class="home-bckg-slider home-bckg-slider-visible">
+		<div data-index="1" class="home-bckg-slider home-bckg-slider-visible">
 			<h2>SEGURIDAD</h2>
 			<p>Contamos con los mas altos estandares de seguridad y encriptacion de datos.</p>
 		</div>
-		<div class="home-bckg-slider">
+		<div data-index="2" class="home-bckg-slider">
 			<h2>CALIDAD</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, tempore.</p>
 		</div>
-		<div class="home-bckg-slider">
+		<div data-index="3" class="home-bckg-slider">
 			<h2>INTEGRIDAD</h2>
 			<p>Iure impedit quam harum, porro sapiente vitae laborum corporis at, eum in repellendus dolores recusandae.</p>
 		</div>
@@ -159,10 +156,10 @@
 		</div>
 	</footer>
 
-  <!-- Javascript Files -->
-  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+	<!-- Javascript Files -->
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
