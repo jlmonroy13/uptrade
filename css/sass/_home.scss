@@ -8,6 +8,10 @@ hr {
 	background-size: cover;
 	position: relative;
 	height: 573px;
+	@media(max-width: 741px) {
+		background: url('../img/bckg/home_bckg_final_movil1.jpg') no-repeat;
+		background-size: cover;
+	}
 	img.img-slider {
 		width: 100%;
 		position: absolute;

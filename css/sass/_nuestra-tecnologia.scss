@@ -5,6 +5,10 @@
 		background-size: cover;
 		padding: 17.3571rem 0;
 		text-align: center;
+		@media(max-width: 824px) {
+		    background: url("../img/bckg/nuestra-tecnologia_bckg_movil.jpg");
+		    background-size: cover;
+		}
 		h2 {
 			font-weight: 600;
 			font-size: 1.7142rem;

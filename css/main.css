@@ -158,6 +158,10 @@ hr {
   background-size: cover;
   position: relative;
   height: 573px; }
+  @media (max-width: 741px) {
+    .home-slider {
+      background: url("../img/bckg/home_bckg_final_movil1.jpg") no-repeat;
+      background-size: cover; } }
   .home-slider img.img-slider {
     width: 100%;
     position: absolute;
@@ -549,6 +553,10 @@ body .home-whatdo .se-content--quienes-somos {
   background-size: cover;
   padding: 17.3571rem 0;
   text-align: center; }
+  @media (max-width: 824px) {
+    #our-technology .our-technology-main {
+      background: url("../img/bckg/nuestra-tecnologia_bckg_movil.jpg");
+      background-size: cover; } }
   #our-technology .our-technology-main h2 {
     font-weight: 600;
     font-size: 1.7142rem; }
@@ -662,7 +670,48 @@ body .home-whatdo .se-content--quienes-somos {
   .job-bckg {
     background: url("../img/bckg/trabaja-con-nosotros_bckg.jpg");
     background-size: cover;
-    height: 607px; }
+    height: 607px;
+    position: relative; }
+    @media (max-width: 779px) {
+      .job-bckg {
+        background: url("../img/bckg/trabaja-con-nosotros_bckg_movil.jpg");
+        background-size: cover; } }
+    .job-bckg__title {
+      font-weight: 700;
+      position: absolute;
+      left: 50px; }
+      @media (max-width: 779px) {
+        .job-bckg__title {
+          left: 75px;
+          text-shadow: 4px 4px 7px rgba(255, 255, 255, 0.59); } }
+      .job-bckg__title--title4 {
+        font-size: 3rem;
+        color: black;
+        top: 110px; }
+        @media (max-width: 779px) {
+          .job-bckg__title--title4 {
+            top: 210px; } }
+      .job-bckg__title--title3 {
+        font-size: 4rem;
+        color: black;
+        top: 145px; }
+        @media (max-width: 779px) {
+          .job-bckg__title--title3 {
+            top: 245px; } }
+      .job-bckg__title--title2 {
+        font-size: 4rem;
+        color: black;
+        top: 203px; }
+        @media (max-width: 779px) {
+          .job-bckg__title--title2 {
+            top: 303px; } }
+      .job-bckg__title--title1 {
+        font-size: 6.5rem;
+        color: #95D700;
+        top: 230px; }
+        @media (max-width: 779px) {
+          .job-bckg__title--title1 {
+            top: 330px; } }
   .job__form {
     display: inline-block;
     width: none; }
@@ -709,7 +758,7 @@ body .home-whatdo .se-content--quienes-somos {
   background: url("../img/bckg/productos_bckg1.jpg");
   background-size: cover;
   height: 597px; }
-  @media (max-width: 856px) {
+  @media (max-width: 710px) {
     .woman {
       background: url("../img/bckg/productos_bckg1_movil.jpg");
       background-size: cover; } }
@@ -869,10 +918,12 @@ body .home-whatdo .se-content--quienes-somos {
     max-width: 755px;
     line-height: 2;
     position: relative;
-    left: -620px;
-    transition: left 2s ease; }
+    left: -90px;
+    opacity: 0;
+    transition: all 2s ease; }
     .bar__legend--visible {
-      left: 0; }
+      left: 0;
+      opacity: 1; }
     .bar__legend--plano {
       max-width: 575px !important; }
     .bar__legend--exhibi {
@@ -917,14 +968,17 @@ body .home-whatdo .se-content--quienes-somos {
     text-align: center;
     margin-top: 5.7rem;
     position: relative;
-    right: -580px;
-    transition: right 2s ease; }
+    bottom: -100px;
+    opacity: 0;
+    transition: all 2s ease; }
     .advantages__container-image--visible {
-      right: 0; }
+      bottom: 0;
+      opacity: 1; }
   .advantages__image {
     width: 60%; }
     .advantages__image--plano {
-      width: 100%; }
+      width: 100%;
+      margin-top: -83px; }
     .advantages__image--actividad {
       width: 100%; }
     .advantages__image--arbol {
@@ -1146,9 +1200,15 @@ body .home-whatdo .se-content--quienes-somos {
   height: 597px;
   margin-top: -102px;
   position: relative; }
+  @media (max-width: 430px) {
+    .map {
+      height: 60vh; } }
   .map > div {
     position: absolute;
     width: 100% !important; }
+    @media (max-width: 430px) {
+      .map > div {
+        height: 100% !important; } }
 
 .contact-header {
   background-color: rgba(0, 0, 0, 0.3); }
@@ -1289,5 +1349,126 @@ footer {
             font-size: 1rem;
             font-family: 'Open Sans', sans-serif;
             font-weight: 400; }
+
+.bg-logo {
+  background: url("../img/bckg/login_bg.png") no-repeat;
+  background-size: cover;
+  height: 472px;
+  margin-top: -191px;
+  position: relative;
+  text-align: center;
+  padding: 140px 0; }
+  @media (max-width: 480px) {
+    .bg-logo {
+      height: 362px;
+      margin-top: -41px;
+      padding: 100px 0; } }
+  .bg-logo h1 {
+    font-weight: 400;
+    font-size: 1.8571rem;
+    color: white; }
+  .bg-logo img {
+    width: 10%;
+    right: 8px;
+    position: relative;
+    min-width: 120px; }
+
+.form-login {
+  padding: 30px 0 50px 0; }
+  @media (max-width: 480px) {
+    .form-login {
+      padding: 50px 25px; } }
+  .form-login .formulario {
+    display: block;
+    margin: 0 auto;
+    max-width: 460px; }
+    .form-login .formulario #myform-login {
+      text-align: center; }
+      .form-login .formulario #myform-login select {
+        position: relative;
+        background-color: #F7F7F7;
+        height: 35px;
+        border: 1px solid #777777;
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 15px;
+        display: block;
+        color: #3F3F3F;
+        font-size: 1rem;
+        border-radius: 0px !important; }
+      .form-login .formulario #myform-login input {
+        position: relative;
+        background-color: #F7F7F7;
+        height: 35px;
+        border: 1px solid #777777;
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 15px;
+        display: block;
+        color: #3F3F3F;
+        font-size: 1rem; }
+      .form-login .formulario #myform-login .checkbox {
+        vertical-align: middle;
+        text-align: left; }
+        .form-login .formulario #myform-login .checkbox input[type='checkbox'] {
+          width: 10px;
+          height: 12px;
+          margin: 0;
+          display: inline-block; }
+        .form-login .formulario #myform-login .checkbox span {
+          line-height: 1;
+          color: #3F3F3F;
+          font-weight: 400;
+          font-size: 1rem; }
+      .form-login .formulario #myform-login label {
+        color: #3F3F3F;
+        font-weight: 600;
+        font-size: 1rem;
+        display: block;
+        text-align: left; }
+      .form-login .formulario #myform-login > a {
+        display: inline-block;
+        color: white;
+        background-color: #95D700;
+        font-weight: 600;
+        font-size: 1.1428rem;
+        margin: 20px auto 10px;
+        padding: 10px 70px;
+        border: 2px solid #95D700; }
+        .form-login .formulario #myform-login > a:hover {
+          background-color: white !important;
+          text-decoration: none;
+          color: #95D700;
+          border: 2px solid #95D700; }
+
+a.forget {
+  display: block;
+  color: #007FFF;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px; }
+
+hr {
+  border-top: 2.5px solid #C5C5C5;
+  width: 92%; }
+
+.box-social {
+  text-align: center;
+  margin: 0 auto; }
+  .box-social a.social-networks {
+    margin-top: 15px;
+    text-align: center; }
+    .box-social a.social-networks span {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      margin-top: 15px; }
+    .box-social a.social-networks .contacto-fb {
+      background: url("../img/icn/contacto_fb.png"); }
+    .box-social a.social-networks .contacto-g {
+      background: url("../img/icn/contacto_g.png"); }
+    .box-social a.social-networks .contacto-in {
+      background: url("../img/icn/contacto_in.png"); }
 
 /*# sourceMappingURL=main.css.map */

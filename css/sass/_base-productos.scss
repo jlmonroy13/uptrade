@@ -107,10 +107,12 @@
     max-width: 755px;
     line-height: 2;
     position: relative;
-    left: -620px;
-    transition: left 2s ease;
+    left: -90px;
+    opacity: 0;
+    transition: all 2s ease;
     &--visible {
       left: 0;
+      opacity: 1;
     }
     &--plano {
         max-width: 575px !important;
@@ -168,16 +170,19 @@
     text-align: center;
     margin-top: 5.7rem;
     position: relative;
-    right: -580px;
-    transition: right 2s ease;
+    bottom: -100px;
+    opacity: 0;
+    transition: all 2s ease;
     &--visible {
-      right: 0;
+      bottom: 0;
+      opacity: 1;
     }             
   }
   &__image {
     width:  60%;
     &--plano {
       width: 100%;
+      margin-top: -83px;
     }
     &--actividad {
       width: 100%;
