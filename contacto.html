@@ -8,6 +8,7 @@
 	<meta name="description" content="UpTrade">
 	<meta name="author" content="Jorge Monroy - Selvio Pérez">
 	<meta name="keywords" content="" />
+	<link rel="icon" href="favicon1.png" type="image/x-icon">
 	<!-- Styles -->	
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/normalize.css">
@@ -35,7 +36,7 @@
 					<li class="nav-list__item"><a class="nav-list__link" href="productos.html">PRODUCTOS</a></li>
 					<li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="contacto.html">CONTACTO</a></li>
 					<li class="nav-list__item"><a class="nav-list__link" href="trabaja-con-nosotros.html">TRABAJA CON NOSOTROS</a></li>
-					<li class="nav-list__item nav-list__item--button"><button><a class="button-primary button-primary--login" href="login.html">LOGIN</a></button></li>  
+					<li class="nav-list__item nav-list__item--button"><button><a class="button-primary button-primary--login" href="login.html" target="_blank">LOGIN</a></button></li>  
 				</ul>
 			</nav>
 		</div>
@@ -47,7 +48,7 @@
 	<section class="contacto_form">
 		<div class="container">
 			<div class="col-md-5">
-				<h4>Derección</h4>
+				<h4>Dirección</h4>
 				<p>Doctor Sotero del Rio 508, Oficina 727-728.</p>
 				<p>Santiago, Región Metropolitana</p>
 				<p>Chile</p>
@@ -64,24 +65,25 @@
 			</div>
 			<div class="col-md-7">
 				<h4>Solicite una reunión, y le explicaremos las ventajas de trabajar con nostros.</h4>
-				<form action="">
+				<form id="contacto-form">
+					<input type="hidden" name="seccion" value="Contacto">
 					<div class="form-group">
 						<label class="ES" for="InputName1">Nombre</label>
-						<input type="text" name="Name:" class="form-control" id="InputName1" placeholder="" required>
+						<input type="text" name="nombre" class="form-control" id="InputName1" required>
 					</div>
 					<div class="form-group">
 						<label class="ES" for="InputEmail1">E-mail</label>
-						<input type="email" name="Email:" class="form-control" id="InputEmail1" placeholder="" required>
+						<input type="email" name="correo" class="form-control" id="InputEmail1" required>
 					</div>
 					<div class="form-group">
 						<label class="ES" for="InputTel">Teléfono</label>
-						<input type="number" name="Name:" class="form-control" id="InputTel" placeholder="" required>
+						<input type="text" name="tel" class="form-control" id="InputTel" required>
 					</div>
 					<div class="form-group">
 						<label class="ES" for="textarea1">Mensaje</label>
-						<textarea id="textarea1" name="Message:" class="form-control" rows="6" required></textarea>
+						<textarea id="textarea1" name="mensaje" class="form-control" rows="6" required></textarea>
 					</div>
-					<button name="submit" value="Submit" type="submit" class="ES btn">ENVIAR</button>
+					<button value="Submit" type="submit" class="ES btn" id="enviar">ENVIAR</button>
 				</form>
 			</div>
 		</div>

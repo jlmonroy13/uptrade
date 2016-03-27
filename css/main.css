@@ -56,6 +56,9 @@ header {
   position: relative;
   z-index: 5; }
 
+.navbar__logo {
+  width: 50%; }
+
 .navbar__title {
   float: left; }
 
@@ -153,97 +156,51 @@ hr {
   border-top: 2.5px solid #95D700;
   width: 161px; }
 
-.home-slider {
-  background: url("../img/bckg/home_bckg_final1.jpg") no-repeat;
-  background-size: cover;
+.titles-mobile {
+  display: none; }
+
+.home-header {
+  margin-bottom: 0 !important; }
+
+.home-slider .video-container {
   position: relative;
-  height: 573px; }
-  @media (max-width: 741px) {
-    .home-slider {
-      background: url("../img/bckg/home_bckg_final_movil1.jpg") no-repeat;
-      background-size: cover; } }
-  .home-slider img.img-slider {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    height: 573px;
-    z-index: 0;
-    display: none;
-    margin-bottom: -65px; }
-  .home-slider img.img-slider-visible {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    height: 573px;
-    z-index: 0;
-    margin-bottom: -65px;
-    display: inline-block; }
-  .home-slider .home-bckg-slider {
-    position: absolute;
-    top: 200px;
-    display: none;
-    margin-left: 10%; }
-    @media (max-width: 950px) {
-      .home-slider .home-bckg-slider {
-        margin-left: 17%; } }
-    .home-slider .home-bckg-slider h2 {
-      font-weight: 700;
-      font-size: 1.5714rem; }
-    .home-slider .home-bckg-slider p {
-      font-weight: 600;
-      font-size: 1.1428rem;
-      color: white;
-      max-width: 326px; }
-      @media (max-width: 442px) {
-        .home-slider .home-bckg-slider p {
-          max-width: 303px; } }
-  .home-slider .home-bckg-slider-visible {
-    position: absolute;
-    top: 200px;
-    margin-left: 10%;
-    display: block; }
-    @media (max-width: 950px) {
-      .home-slider .home-bckg-slider-visible {
-        margin-left: 17%; } }
-    .home-slider .home-bckg-slider-visible h2 {
-      font-weight: 700;
-      font-size: 1.5714rem; }
-    .home-slider .home-bckg-slider-visible p {
-      font-weight: 600;
-      font-size: 1.1428rem;
-      color: white;
-      max-width: 326px; }
-      @media (max-width: 442px) {
-        .home-slider .home-bckg-slider-visible p {
-          max-width: 303px; } }
-  .home-slider > a {
+  top: -102px; }
+  .home-slider .video-container .titles {
     position: absolute;
     top: 240px;
-    font-size: 1.5714rem; }
-    .home-slider > a:hover {
-      color: #95D700;
-      font-size: 1.7857rem; }
-    .home-slider > a:active {
+    right: 100px;
+    text-align: right; }
+    @media (max-width: 706px) {
+      .home-slider .video-container .titles {
+        top: 230px; } }
+    @media (max-width: 406px) {
+      .home-slider .video-container .titles {
+        right: 10px; } }
+    .home-slider .video-container .titles h1 {
       color: white; }
-    .home-slider > a:focus {
-      color: white; }
-  .home-slider .slide-next {
-    right: 60px; }
-    @media (max-width: 633px) {
-      .home-slider .slide-next {
-        right: 30px; } }
-  .home-slider .slide-prev {
-    left: 60px; }
-    @media (max-width: 633px) {
-      .home-slider .slide-prev {
-        left: 30px; } }
+  .home-slider .video-container .overlay-video {
+    position: absolute;
+    top: 0;
+    background-color: rgba(35, 33, 33, 0.4);
+    height: 100%;
+    width: 100%; }
 
 .bar-home {
   padding-top: 100px !important;
-  position: relative; }
+  position: relative;
+  margin-top: -295px !important; }
   @media (min-width: 1300px) {
     .bar-home {
       height: 589px !important; } }
+  @media (max-width: 906px) {
+    .bar-home {
+      margin-top: -205px !important; } }
+  @media (max-width: 706px) {
+    .bar-home {
+      margin-top: -175px !important; } }
+  @media (max-width: 406px) {
+    .bar-home {
+      margin-top: -245px !important; } }
   .bar-home h2 {
     font-weight: 700;
     font-size: 1.5714rem; }
@@ -456,6 +413,141 @@ hr {
       color: #95D700;
       border: 2px solid #95D700; }
 
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  .home-header {
+    margin-bottom: -102px !important; }
+
+  .video-container {
+    display: none; }
+
+  .home-header-mobile {
+    background: url("../img/bckg/home_bckg_final1.jpg") no-repeat;
+    background-size: cover;
+    height: 450px; }
+
+  .bar-home {
+    padding-top: 100px !important;
+    position: relative;
+    margin-top: -125px !important; }
+
+  .titles-mobile {
+    display: block;
+    position: absolute;
+    text-align: right;
+    top: 150px;
+    right: 30px; }
+    .titles-mobile h1, .titles-mobile h2 {
+      color: white; } }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  .home-header {
+    margin-bottom: -102px !important; }
+
+  .video-container {
+    display: none; }
+
+  .home-header-mobile {
+    background: url("../img/bckg/home_bckg_final1.jpg") no-repeat;
+    background-size: cover;
+    height: 450px; }
+
+  .bar-home {
+    padding-top: 100px !important;
+    position: relative;
+    margin-top: -125px !important; }
+
+  .titles-mobile {
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    text-align: right; }
+    .titles-mobile h1, .titles-mobile h2 {
+      color: white; } }
+/* The New iPad (iPad 3) ----------- */
+@media only screen and (min-device-width: 1536px) and (max-device-width: 2048px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* Styles */
+  .home-header {
+    margin-bottom: -102px !important; }
+
+  .video-container {
+    display: none; }
+
+  .home-header-mobile {
+    background: url("../img/bckg/home_bckg_final1.jpg") no-repeat;
+    background-size: cover;
+    height: 450px; }
+
+  .bar-home {
+    padding-top: 100px !important;
+    position: relative;
+    margin-top: -125px !important; }
+
+  .titles-mobile {
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    text-align: right; }
+    .titles-mobile h1, .titles-mobile h2 {
+      color: white; } }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+  .home-header {
+    margin-bottom: -102px !important; }
+
+  .video-container {
+    display: none; }
+
+  .home-header-mobile {
+    background: url("../img/bckg/home_bckg_final1.jpg") no-repeat;
+    background-size: cover;
+    height: 450px; }
+
+  .bar-home {
+    padding-top: 100px !important;
+    position: relative;
+    margin-top: -125px !important; }
+
+  .titles-mobile {
+    display: block;
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    text-align: right; }
+    .titles-mobile h1, .titles-mobile h2 {
+      color: white; } }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 450px), only screen and (min-device-pixel-ratio: 1.5) and (max-width: 450px) {
+  /* Styles */
+  .home-header {
+    margin-bottom: -102px !important; }
+
+  .video-container {
+    display: none; }
+
+  .home-header-mobile {
+    background: url("../img/bckg/home_bckg_final_movil1.jpg") no-repeat;
+    background-size: cover;
+    height: 450px; }
+
+  .bar-home {
+    padding-top: 100px !important;
+    position: relative;
+    margin-top: -125px !important; }
+
+  .titles-mobile {
+    display: block;
+    position: absolute;
+    text-align: right;
+    top: 150px;
+    right: 20px !important; }
+    .titles-mobile h1, .titles-mobile h2 {
+      color: white; } }
 .description {
   text-align: center;
   background: url("../img/bckg/quienes-somos_bckg.jpg");
@@ -1350,6 +1442,15 @@ footer {
             font-family: 'Open Sans', sans-serif;
             font-weight: 400; }
 
+.video-cont {
+  position: relative; }
+  .video-cont .overlay-video {
+    position: absolute;
+    top: 0;
+    background-color: rgba(35, 33, 33, 0.4);
+    height: 100%;
+    width: 100%; }
+
 .bg-logo {
   background: url("../img/bckg/login_bg.png") no-repeat;
   background-size: cover;
@@ -1449,7 +1550,7 @@ a.forget {
   text-align: center;
   margin-bottom: 50px; }
 
-hr {
+hr.login-line {
   border-top: 2.5px solid #C5C5C5;
   width: 92%; }
 
@@ -1470,5 +1571,52 @@ hr {
       background: url("../img/icn/contacto_g.png"); }
     .box-social a.social-networks .contacto-in {
       background: url("../img/icn/contacto_in.png"); }
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+  .video-container {
+    display: none; }
+
+  .home-header-mobile {
+    background: url("../img/bckg/home_bckg_final1.jpg") no-repeat;
+    background-size: cover;
+    height: 450px; }
+
+  .bar-home {
+    padding-top: 100px !important;
+    position: relative;
+    margin-top: -125px !important; }
+
+  .titles-mobile {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 50px; }
+    .titles-mobile h1, .titles-mobile h2 {
+      color: white; } }
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 450px), only screen and (min-device-pixel-ratio: 1.5) and (max-width: 450px) {
+  /* Styles */
+  .video-container {
+    display: none; }
+
+  .home-header-mobile {
+    background: url("../img/bckg/home_bckg_final_movil1.jpg") no-repeat;
+    background-size: cover;
+    height: 450px; }
+
+  .bar-home {
+    padding-top: 100px !important;
+    position: relative;
+    margin-top: -125px !important; }
+
+  .titles-mobile {
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 50px; }
+    .titles-mobile h1, .titles-mobile h2 {
+      color: white; } }
 
 /*# sourceMappingURL=main.css.map */

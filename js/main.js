@@ -188,9 +188,23 @@ $(function(){
     $('.js-retract-nav').removeClass('overlay--visible');
   })
 
+  $('#contacto-form').submit(function() {
+    var form = this;
+    $('#enviar').prop('disabled', true);
+    $.post('/mailer.php', $(form).serialize(), function(data) {
+      $(form).after($('<div class="alert alert-success" role="alert"/>').text(data.ok));
+      form.reset();
+    }).fail(function() {
+      $(form).after($('<div class="alert alert-danger" role="alert"/>').text('Error al enviar mensaje'));
+    }).always(function() {
+      $('#enviar').prop('disabled', false);
+    });
+    return false;
+  });
+
   var productos = [
     {
-      nombre: "NSG - Nivel de Servicio de Góndola",
+      nombre: "NSG - Nivel de Servicio en Góndola",
       tipo: "Producto Cuantitativo",
       src: "img/bckg/producto-catalogo-nsg.jpg",
       href: "productos-nsg.html",
@@ -254,21 +268,21 @@ $(function(){
     },
     {
       nombre: "Self Audit",
-      tipo: "Producto Sistémicos TI",
+      tipo: "Productos Sistémicos TI",
       src: "img/bckg/producto-catalogo-self.jpg",
       href: "productos-self.html",
       select: true
     },
     {
       nombre: "Bussiness Intelligence",
-      tipo: "Producto Sistémicos TI",
+      tipo: "Productos Sistémicos TI",
       src: "img/bckg/producto-catalogo-bsines.jpg",
       href: "productos-bussiness.html",
       select: true
     },
     {
       nombre: "B2B",
-      tipo: "Producto Sistémicos TI",
+      tipo: "Productos Sistémicos TI",
       src: "img/bckg/producto-catalogo-b2b.jpg",
       href: "productos-b2b.html",
       select: true
@@ -312,7 +326,7 @@ $(function(){
 
   $('.js-productos-sisTI').click(function(event){
     for (var i = productos.length - 1; i >= 0; i--) {
-      if (productos[i].tipo == "Producto Sistémicos TI") {
+      if (productos[i].tipo == "Productos Sistémicos TI") {
         productos[i].select = true;
       } else {
         productos[i].select = false;
@@ -322,6 +336,15 @@ $(function(){
     $('.js-productos').html(productosTemplate(productos));
   });
 
-  
+  $('#acceso').change(function() {
+  var option = $(this).find('option:selected');
+  window.location.href = option.data("url");
+  });
+
+  // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  //   $( ".video-mobile").hide();
+  //   $('.home-slider').addClass('home-header-mobile');
+  // }
+
 });
   
